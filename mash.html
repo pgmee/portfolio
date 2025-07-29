@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="icon" href="images/LOGO_PGMEE_1_nov.png">
+<link rel="stylesheet" href="buttons.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <title>ПОРТФОЛИО НА ПГМЕЕ - Бургас</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    
+body{
+  background-image: url('images/gear.jpg');
+    background-position:center;  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:100%;
+}
+.card{
+width: 88%;
+margin: auto;
+background-color: #959595;
+color: white;
+margin-top: 3vh;
+padding: 1vh 2vw;
+}
+
+div.card h1{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+img{
+    transition: transform 2s;
+}
+img:hover{
+    transform: scale(1.1)
+}
+.big{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-title{
+  width:45%;
+}
+.imp{
+  height: 60vh;
+  width: auto;
+}
+.imps{
+  height: 40vh;
+  width: auto;
+}
+.row{
+   justify-content: space-evenly; 
+   flex-wrap: nowrap;
+    align-items: center;
+}
+.s{
+ width: 40%;
+}
+.ss{
+ width: 25%;
+}
+a.previous img, a.next img {
+  width: 90%; 
+  max-width: 20vw; }
+  @media (max-width: 768px) {
+    a.previous img {
+      position: fixed;
+        bottom:5vh;
+        right:7vw; 
+        width:9vw;
+        height: 6vh;
+    } 
+    a.next img {
+    position: fixed;
+        bottom:12vh;
+        right: 1vw; 
+        width: 6vw;
+        height: 7vh;
+  }
+  div.card h1{
+    font-size: 3.5vw;
+    text-align: center;
+}
+p{
+    font-size:2.5vw;
+}
+.card, .big, .row{
+  flex-direction: column;
+}
+.card-title{
+  width: 90%;
+}
+.s, .ss{
+  width: 80%;
+  margin: 1vh auto;
+}
+.imp{
+   width: 80%;
+   height: auto;
+   margin: 1vh auto;
+}
+}
+@media (max-width: 480px) {
+  
+  a.previous img {
+    position: fixed;
+        bottom:5vh;
+        right:9vw; 
+        width:9vw;
+        height: 6vh;
+    }
+    a.next img {
+    position: fixed;
+        bottom:12vh;
+        right: 4vw; 
+        width: 7vw;
+        height: 6vh;
+    }
+    .card-title{
+  font-size:3vw;
+}
+   p{
+  font-size:3.5vw;
+}
+}
+    </style>
+</head>
+<body >
+     <header>
+    <img src="images/LOGO_PGMEE_1_nov.png" alt="Лого" class="header-logo">
+      <div>
+      <h2  style="font-size:1.8rem;"> ПРОФЕСИОНАЛНА ГИМНАЗИЯ ПО МЕХАНОЕЛЕКТРОТЕХНИКА И ЕЛЕКТРОНИКА – Бургас
+      </h2>
+      <h1 style="font-size:3.5rem; margin-top: 2vh;">П О Р Т Ф О Л И О</h1>
+    </div>
+  </header>
+  <!-- Навигационно меню -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" title="Начало">
+  <i class="bi bi-house-door-fill fs-4"></i>
+</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+    <li class="nav-item"><a class="nav-link" href="vision.html">Визия и мисия</a></li>
+          <!-- Меню с подменю -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button">
+            История
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="direktori.html">Директори</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="rabotilnici.html">История на работилниците</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="biblioteka.html">История на библиотеката</a></li><hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="pastpresent.html">Миналото днес</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="symbols.html">Символи</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="filmi.html">Филми</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="vestnici.html">Вестници</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="almanah.html">Юбилеен алманах</a></li>
+            </ul>
+          </li>
+            <!-- Меню с подменю -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button">
+            Покорени върхове
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="profesional.html">Професионална подготовка</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="math.html">Математика и ИТ</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="nauki.html">Обществени и природни науки</a></li><hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="bel.html">Литература</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="languages.html">Езици</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="fvs.html">Спорт</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="teachers.html">Почетни награди и отличия на учители</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="inovations.html">Иновативно училище</a></li>
+          <li class="nav-item"><a class="nav-link" href="proekti.html">Проекти</a></li>
+          <li class="nav-item"><a class="nav-link" href="kvalifikacii.html">Квалификации</a></li>
+           <li class="nav-item"><a class="nav-link" href="traditions.html">Традиции</a></li>
+            <li class="nav-item"><a class="nav-link" href="team.html">Училищен екип</a></li>
+            <li class="nav-item"><a class="nav-link" href="vr.html">Виртуална разходка</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+   <main class="container-fluid mt-2">
+<div class="card ">
+        <h1>Състезание по заваряване 2023г. Arc Cup International Welding Competition </h1>
+        <p>Хакан Емин на 18г., ученик в ПГМЕЕ гр. Бургас – м-д 135/GMAW завоюва ТРЕТО място.
+            Успехът на ученика се дължи на упоритата работа на неговият учител инж. Я. Самоковлиев.</p>
+       <div class="row">
+      <img class="imps" src="images/Х4.jpg" alt="">
+      <img class="imps" src="images/Х5.jpg" alt="">
+      <img class="imps" src="images/Х6.jpg" alt="">
+      </div>
+      </div>
+<div class="card ">
+        <h1>НС “Най-добър млад заварчик” 2022/2023г.</h1>
+        <p>Хакан Емин Емин от 11 г клас и Мартин Веселинов Михнев от 12 б клас с ръководител: инж.Яни Самоковлиев  се класира на ПЪРВО място.<br> В категория МИГ – МАГ заваряване Хакан Емин се класира на трето място.</p>
+        <div class="row">
+      <img class="imp" src="images/zav3.jpg" alt="">
+      <img class="imp" src="images/zav4.jpg" alt="">
+      <img class="imp" src="images/zav5.jpg" alt="">   
+      </div>
+      </div>
+<div class="card big">
+  <div class="card-title">
+  <h1>НС “Най-добър млад заварчик”  2021/2022г.</h1>
+  <p>ПГМЕЕ участва с отбор в състав: Николай Добрев и Валентин Тенев, ученици от 12 б клас. Ръководител на отбора е инж.Яни Самоковлиев. Отборът на ПГМЕЕ се класира на ПЪРВО място в Националното състезание.</p>
+</div>
+<img class="ss" src="images/zav1.jpg" alt="">
+<img class="ss" src="images/zav2.jpg" alt="">
+</div>
+<div class="card big card-title" >
+  <img class="imp"  src="images/А1.jpg" alt="">
+  <div class="card-title" >
+  <h1>Конкурс –ДЕН на Европа 2023г. </h1>
+  <p>Асим Адемов от 9 клас с ръководител инж.Яни Самоковлиев, завоюва второ място.</p>
+</div>
+</div>
+<div class="card ">
+    <h1>НС „Най-добър млад техник в машиностроенето” 2023/2024г.</h1>
+    <p>Учениците от 11 б клас: Мартин Светлозаров Бетов и Иван Георгиев Кадиев, с ръководител  инж. Милена Даскалова се класираха на ТРЕТО отборно място. Приети са като студенти в ТУ – Варна.
+      </p>
+   <div class="row">
+  <img class="imp"  src="images/мт-11.jpg" alt="">
+  <img class="imp"  src="images/мт-16.jpg" alt="">
+  <img class="imp"  src="images/мт-17.jpg" alt="">
+  </div>
+  </div>
+<div class="card big">
+    <div class="s" >
+  <h1>НС „Най-добър млад техник в машиностроенето” 2022/2023г.</h1>
+  <p>Учениците от 12Б клас Тодор Стоянов Петров и Данаил Ивайлов Динев, с ръководител  инж. Милена Даскалова се класираха на десето отборно  място. Получиха сертификати за прием в ТУ- Варна като студенти. 
+    </p></div>
+<img class="imp" src="images/мт7.jpg" alt="">
+<img class="imp"  src="images/мт10.jpg" alt="">
+</div>
+<div class="card big">
+    <div class="s " >
+  <h1>НС „Най-добър млад техник в машиностроенето” 2021/2022г.</h1>
+  <p>Учениците от 12Б клас Яни Станчев Генов и Николай Здравков Добрев, с ръководител  инж. Милена Даскалова се класираха на ВТОРО отборно  място. Яни Генов заема ТРЕТО индивидуално място.
+    </p></div>
+<img class="imp" src="images/мт3.jpg" alt="">
+<img class="imp" src="images/мт4.jpg" alt="">
+</div>
+<div class="card big" style="justify-content: space-evenly;" >
+    <img class="imp" src="images/acad.jpg" alt="">
+  <div class="card-title" >
+  <p>През учебната 2014/2015 година колектив от ПГМЕЕ започва работа по Програмата за трансгранично сътрудничество по ИПП България - Турция с проект ''Трансгранично сътрудничество в развитието на професионална обучителна система CAD/CAM’’. Партньор по проекта е Техническо-професионално училище в Къркларели, Турция. По време на проекта са оборудвани кабинети с компютри и софтуер Auto CAD, разработена е методология на обучение, издадени са ръководства на български и турски език. В края на проекта се проведе състезание между отборите на ПГМЕЕ и Техническото-професионално училище в гр.Къркларели.
+    Сюлейман Тунджай Сюлейман се класира на първо място и Теодор Мирославов Пешев заема трето място. Учениците са подготвени от инж. Милена Даскалова.
+  </p>
+</div>  
+</div>
+<div class="card big card-title" style=" margin-bottom:3vh;">
+  <div class="card-title">
+    <h1>През учебната 2011/2012г на 28-мата олимпиада по Техническо чертане,</h1>
+  <p>ученикът Калоян Иванов от 10г  клас, под ръководството на инж. Веселина Кашукеева спечели ПЪРВО място.</p>
+</div>
+  <img class="imp" src="images/kash.jpg" alt="">
+</div>
+</main>
+    <a href="#" class="next " ><img src="images/arrow-up-chrome.gif"  ></a>
+        <a href="profesional.html" class="previous "><img src="images/arrow-left-chrome.gif"></a>
+<footer></footer>
+</body>
+</html>

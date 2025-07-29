@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="icon" href="images/LOGO_PGMEE_1_nov.png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <title>ПОРТФОЛИО НА ПГМЕЕ - Бургас</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+  .card-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 87%;
+    margin:7vh auto 0;
+    text-align: justify;
+  }
+  .pics{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:-1vh auto 5vh;
+    width: 97%;
+  }
+  .names{
+    width: 100%;
+    text-align: center;
+    margin:auto;
+  }
+  .col{
+    display:block;
+    width: 44vw;
+    background-image: url('images/litbg.jpeg');
+    background-size: cover;
+    height: 97vh;
+  }
+ .card{
+    background-color: transparent;
+    border: none;
+ }
+ .small{
+  height: 70vh;
+ }
+ .tx{
+     width: 25vw;
+    height: 40vh;
+    background-size: cover;
+ }
+ .card-img-top{
+  width: 77%; 
+  margin-left:10% ;
+ }
+ img{
+  transition:  transform 0.5s;
+ }
+ img:hover{
+                transform: scale(1.3);    
+            }
+  @media (max-width: 768px) {
+    .pics{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:-1vh auto 5vh;
+    width: 97%;
+  }
+  .col{
+    width: 95%;
+    background-size: cover;
+    height: auto;
+  }
+  .small{
+  height: auto;
+ }
+    div.card h1{
+        font-size: 4vw;
+        }
+
+        .card-title{
+    font-size: 3.5vw;
+    width: 87%;
+    margin:3vh auto 0px;
+  }
+    a.previous img {
+    position: fixed;
+        bottom:5vh;
+        right:7vw; 
+        width:9vw;
+        height: 6vh;
+    } 
+    a.next img {
+    position: fixed;
+        bottom:12vh;
+        right: 1vw; 
+        width: 6vw;
+        height: 6vh;
+  }
+}
+@media (max-width: 480px) {
+    h1{
+        font-size: 5.5vw;
+        font-weight: 800;
+        margin-bottom: 0px;
+        }
+        .small{
+  height: auto;
+ }
+ .tx{
+  height: auto;
+ }
+        .card-title{
+    font-size: 4.5vw;
+    margin:1vh auto 0px;
+  }
+        a.previous img {
+          position: fixed;
+              bottom:5vh;
+              right:8vw; 
+              width:9vw;
+              height: 6vh;
+          }
+          a.next img {
+          position: fixed;
+              bottom:12vh;
+              right: 3vw; 
+              width: 7vw;
+              height: 6vh;
+          }
+    }
+    </style>
+</head>
+<body >
+  <header>
+    <img src="images/LOGO_PGMEE_1_nov.png" alt="Лого" class="header-logo">
+      <div>
+      <h2  style="font-size:1.8rem;"> ПРОФЕСИОНАЛНА ГИМНАЗИЯ ПО МЕХАНОЕЛЕКТРОТЕХНИКА И ЕЛЕКТРОНИКА – Бургас
+      </h2>
+      <h1 style="font-size:3.5rem; margin-top: 2vh;">П О Р Т Ф О Л И О</h1>
+    </div>
+  </header>
+  <!-- Навигационно меню -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" title="Начало">
+  <i class="bi bi-house-door-fill fs-4"></i>
+</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+    <li class="nav-item"><a class="nav-link" href="vision.html">Визия и мисия</a></li>
+          <!-- Меню с подменю -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button">
+            История
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="direktori.html">Директори</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="rabotilnici.html">История на работилниците</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="biblioteka.html">История на библиотеката</a></li><hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="pastpresent.html">Миналото днес</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="symbols.html">Символи</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="filmi.html">Филми</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="vestnici.html">Вестници</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="almanah.html">Юбилеен алманах</a></li>
+            </ul>
+          </li>
+            <!-- Меню с подменю -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button">
+            Покорени върхове
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="profesional.html">Професионална подготовка</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="math.html">Математика и ИТ</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="nauki.html">Обществени и природни науки</a></li><hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="bel.html">Литература</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="languages.html">Езици</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="fvs.html">Спорт</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="teachers.html">Почетни награди и отличия на учители</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="inovations.html">Иновативно училище</a></li>
+          <li class="nav-item"><a class="nav-link" href="proekti.html">Проекти</a></li>
+          <li class="nav-item"><a class="nav-link" href="kvalifikacii.html">Квалификации</a></li>
+           <li class="nav-item"><a class="nav-link" href="traditions.html">Традиции</a></li>
+            <li class="nav-item"><a class="nav-link" href="team.html">Училищен екип</a></li>
+            <li class="nav-item"><a class="nav-link" href="vr.html">Виртуална разходка</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <main class="container-fluid mt-2">
+    <h1>ПЕКК по БЕЛ – „Покорени върхове“</h1>
+   
+    <div class="row row-cols-1 row-cols-md-2 g-4 pics ">
+          <div class="col card ">         
+            <div class="card-body names">
+              <h4 class="card-title" > Второ място на Теодора Славова в 26-тото издание на Национален литературен конкурс "Любовта в нас" 2023 г.</h4>
+            </div>  
+            <img src="images/b4.jpg" class="card-img-top shadow-lg " > 
+          </div>
+              <div class="col card  ">   
+              <div class="card-body names">
+                <h4 class="card-title" >Първо място в Националния конкурс за православна поезия, проза и видео – изпълнение на стих на тема: „Рождество на Спасителя” 2022 г.</h4>
+              </div> 
+              <img src="images/b6.jpg" class="card-img-top shadow-lg " >     
+            </div>
+          
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 g-4 pics ">
+            <div class="col card ">   
+                <div class="card-body names">
+                   <h4 class="card-title" >Награда за Петър Мирчев в конкурс за написване на есе, посветен на Деня на Бургас на тема: „Бургас – моят роден град” през 2019 г.</h4>
+                </div>  
+                <img src="images/b7.jpg" class="card-img-top shadow-lg "  >    
+            </div>
+            <div class="col card ">
+                <div class="card-body names">
+                 <h4 class="card-title" >Второ място на Мартин Михалев на Четвъртия ученически литературен конкурс „Който спаси един човешки живот, спасява цяла вселена” от трибуната, която им предостави Центърът за еврейско-българско сътрудничество „Алеф” през 2017г.</h4>
+                </div>  
+                <img src="images/b9.jpg" class="card-img-top shadow-lg " >    
+            </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 g-4 pics " >
+            <div class="col card small">
+                <div class="card-body names">
+                   <h4 class="card-title" >Второ място за Димитър Даниелов Атанасов и трето място за Димитър Вълков Димитров на конкурс за есе на тема  “Училището – територия на етническа толерантност”, организиран от Община Бургас - 2017г.</h4>    
+            </div>
+        </div>
+       <div class="col card  small">    
+                <div class="card-body names">            
+                 <h4 class="card-title" >Второ място на Димитър Димитров на Националния конкурс „Морето, морето, морето” през 2015г.</h4>
+                </div>      
+            <img src="images/b10.jpg" class="card-img-top shadow-lg "  >
+        </div>  
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 g-4 pics ">
+        <div class="col tx" >                 
+                <div class="card-body names" >
+                    <h4 class="card-title">Трето място на Теодора Славова в литературен конкурс за млади творци “Бургас-моят град” през 2022 г.</h4>
+                </div>    
+          
+        </div>  
+        <div class="col tx"  >        
+                <div class="card-body names" >      
+                   <h4 class="card-title" >Грамота за Димитър Димитров на Национален поетичен конкурс „Непознати улици“ през 2014 г.</h4>        
+                </div>           
+        </div>
+     <div class="col tx" >       
+            <div class="card-body names" >
+                    <h4 class="card-title" >Първо място на Аделин Кадиев на Национален конкурс за есе - 2008 г.</h4>
+                </div>                      
+        </div>   
+    </div>
+ </main>      
+        <a href="#" class="next " ><img src="images/arrow-up-chrome.gif"  ></a>
+
+  <footer></footer>
+</body>
+</html>

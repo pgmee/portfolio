@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="icon" href="images/LOGO_PGMEE_1_nov.png">
+<link rel="stylesheet" href="buttons.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <title>ПОРТФОЛИО НА ПГМЕЕ - Бургас</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+body{
+  background-image: url('images/pxfuel.jpg');
+    background-position:center;  
+    background-repeat: no-repeat;
+    background-color: #162538;
+    background-attachment: fixed;
+    background-size:100%;
+}
+
+.card{
+width: 93%;
+margin: auto;
+background-color: #21476A;
+color: white;
+margin-top: 3vh;
+padding: 1vh 2vw;
+}
+
+div.card h1{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+img{
+    transition: transform 2s;
+}
+img:hover{
+    transform: scale(1.1)
+}
+.big{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-title{
+  width: 50%;
+}
+.s{
+ width: 45%;
+}
+.ss{
+  width: 35%;
+}
+.imp{
+  height: 50vh;
+  width: auto;
+}
+.row{
+   justify-content: space-between; 
+   flex-wrap: wrap;
+    align-items: center;
+}
+a.previous img, a.next img {
+  width: 90%; 
+  max-width: 20vw; }
+  @media (max-width: 768px) {
+    a.previous img {
+      position: fixed;
+        bottom:5vh;
+        right:7vw; 
+        width:9vw;
+        height: 6vh;
+    } 
+    a.next img {
+    position: fixed;
+        bottom:12vh;
+        right: 1vw; 
+        width: 6vw;
+        height: 7vh;
+  }
+  div.card h1{
+    font-size: 3.5vw;
+    text-align: center;
+}
+p{
+    font-size:2.5vw;
+}
+.card, .big{
+  flex-direction: column;
+}
+.card-title{
+  width: 90%;
+}
+.s{
+  width: 90%;
+}
+.imp{
+   width: 80%;
+   height: auto;
+   margin: 1vh auto;
+}
+}
+@media (max-width: 480px) {
+  
+  a.previous img {
+    position: fixed;
+        bottom:5vh;
+        right:9vw; 
+        width:9vw;
+        height: 6vh;
+    }
+    a.next img {
+    position: fixed;
+        bottom:12vh;
+        right: 4vw; 
+        width: 7vw;
+        height: 6vh;
+    }
+    .card-title{
+  font-size:3vw;
+}
+   p{
+  font-size:3.5vw;
+}
+}
+    </style>
+</head>
+<body >
+     <header>
+    <img src="images/LOGO_PGMEE_1_nov.png" alt="Лого" class="header-logo">
+      <div>
+      <h2  style="font-size:1.8rem;"> ПРОФЕСИОНАЛНА ГИМНАЗИЯ ПО МЕХАНОЕЛЕКТРОТЕХНИКА И ЕЛЕКТРОНИКА – Бургас
+      </h2>
+      <h1 style="font-size:3.5rem; margin-top: 2vh;">П О Р Т Ф О Л И О</h1>
+    </div>
+  </header>
+  <!-- Навигационно меню -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" title="Начало">
+  <i class="bi bi-house-door-fill fs-4"></i>
+</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+    <li class="nav-item"><a class="nav-link" href="vision.html">Визия и мисия</a></li>
+          <!-- Меню с подменю -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button">
+            История
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="direktori.html">Директори</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="rabotilnici.html">История на работилниците</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="biblioteka.html">История на библиотеката</a></li><hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="pastpresent.html">Миналото днес</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="symbols.html">Символи</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="filmi.html">Филми</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="vestnici.html">Вестници</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="almanah.html">Юбилеен алманах</a></li>
+            </ul>
+          </li>
+            <!-- Меню с подменю -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button">
+            Покорени върхове
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="profesional.html">Професионална подготовка</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="math.html">Математика и ИТ</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="nauki.html">Обществени и природни науки</a></li><hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="bel.html">Литература</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="languages.html">Езици</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="fvs.html">Спорт</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="teachers.html">Почетни награди и отличия на учители</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="inovations.html">Иновативно училище</a></li>
+          <li class="nav-item"><a class="nav-link" href="proekti.html">Проекти</a></li>
+          <li class="nav-item"><a class="nav-link" href="kvalifikacii.html">Квалификации</a></li>
+           <li class="nav-item"><a class="nav-link" href="traditions.html">Традиции</a></li>
+            <li class="nav-item"><a class="nav-link" href="team.html">Училищен екип</a></li>
+            <li class="nav-item"><a class="nav-link" href="vr.html">Виртуална разходка</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="container-fluid mt-2">
+  <h1 style="color: white;">ЕЛ.ОБЗАВЕЖДАНЕ</h1>
+  <div class="card">
+    <h1>През януари и март 1965г.</h1>
+    <p> Вечер на електротехниката (инж. Емил Пренеров) и Вечер на автоматиката (инж. Дамянов, инж. Пренеров и Н. Станев), които се провеждат в Концертната зала на Бургас. Демонстрират се опити, показват се нагледни пособия от кабинетите и движещ се робот с туптящо червено сърце, изработен от учениците, който се превръща в голяма атракция и години наред се помни от гражданството на Бургас. </p>
+  </div>
+  <div class="card big">
+    <div class="card-title">
+    <h1>През учебната 1970/1971г. </h1>
+    <p>На открит урок „Работата на електронната лампа в ключов (квантов) режим” инж. Емил Пренеров демонстрира конструираната от него машина-екзаменатор за бързо осъществяване на обратна връзка между учител и ученик и за проверка и оценка на знанията. След усъвършенстването й към разработката е проявен интерес и е наградена от Министерството на народната просвета. Учениците от ръководения от инж. Пренеров клуб за научно и техническо творчество на младежта (ТНТМ) също постигат големи успехи. На състоялата се в Пловдив през 1971 г. изложба техникумът участва с много експонати като един от тях – „Цветомузика” на четвъртокурсниците Благой Мечков и Иван Божинов са отличени със златна значка и са получили  специална награда  фотоапарат Зенит ЕМ.</p>
+  </div>
+  <img class="s" src="images/eop0.png" alt="">
+</div>
+<div class="card">
+  <h1>Открита е специалност „Корабна електротехника“</h1>
+  <p> През учебната 1972/73 година те изработват „Стенд за изпитване на двигатели с вътрешно горене”, за който получават златна значка от Националната изложба на ТНТМ. Курсистите, участвали в проекта (Петко Стоянов, Боян Николов, Тодор Станчев, Александър Иванов, Юли Янков и Веселин Стаматов), са приети във ВМЕИ – София без конкурсен изпит. Инж. Пренеров получава и специална грамота от изложбата по случай 100 години от професионалното образование в България, на която техникумът участва и е класиран на трето място.</p>
+</div>  
+<div class="card big">
+  <div class="card-title">
+  <h1>През 2007 година </h1>
+  <p>в ПГМЕЕ започна обучение по едно от съвременните направления в техниката – мехатроника, обединяващо механика, ел.техника и техника на управление. Група ученици под ръководството на инж. В.Маркова се класира за участие в Националната олимпиада по мехатроника в София, където нашите два ученически отбора заеха ІІ и ІІІ място. Домакин на олимпиадата бе представителството на германската фирма„ФЕСТО”, която предостави и пневматична техника за провеждането на олимпиадата.</p>
+  <p>В края на април 2007 година в Букурещ се проведе Международна олимпиада по мехатроника, в която участваха 20 отбора от 7 европейски държави. Нашите ученици представиха разработка и презентация на творческа задача за автоматичен пневматичен участък, реално действащ в производството, с която се класираха на ІІ място.</p>
+</div>
+<img class="s" src="images/eop1.JPG" alt="">
+</div>
+<div class="card big">
+  <img class="s" src="images/eop2.JPG" alt="">
+  <div class="card-title s"  >
+  <h1>През учебната 2012/2013г.  </h1>
+  <p>клуб - Зелени алтернативи – ВЕИ –с ръководител инж. Албена Колева изработиха действащ макет на "Жилищен комплекс със светодиодно осветление, захранван от фотоволтаични панели". С този макет взеха и участие на IV Национална конференция "Енергия на бъдещето", проведена на 26.04.2013 г. в град Варна.</p>
+</div>
+
+</div>
+<div class="card big">
+  <div class="card-title">
+  <h1>2013/2014г.</h1>
+  <p>На 25 април 2014 година в Технически университет- Варна се проведе Пета национална ученическа  конференция „ЕНЕРГИЯ НА БЪДЕЩЕТО”, организирана от Професионална гимназия по електротехника – Варна. За втора поредна година нашето училище беше представено от участниците в клуб „Енергия на бъдещето” с ръководител инж. Албена Колева. За целта те изработиха макети и презентации и бяха допуснати до представяне на 25.04.2014. Минчо Димов Гърдевски 10 е клас представи - Макет „Автомобил с водородна горивна клетка”. Тихомир Александров Стойчев 10 е клас – представи макет „Енергонезависимо захранване на цех за преработване на дървесина” и бе класиран на III място в категория Макети, а Пламен Дилянов Янев 10 е клас - презентация „Енергията на бъдещето е във водородната горивна клетка”.</p>
+</div>
+<img class="s" src="images/eop3.JPG" alt="">
+</div>
+<div class="card big">
+  <img class="s" src="images/eop4.JPG" alt="">
+  <div class="card-title s">
+  <h1>2014/2015 учебна година  </h1>
+  <p>Клуб „Енергия на бъдещето“, с ръководител инж.Албена Колева бе одобрен сред 915 клуба от територията на Бургаска област за участие в Националната конференцията, проведена в к.к. Слънчев ден през м. април 2015 г. Пламен Янев и Радомир Тодоров от 10 е клас демонстрираха макетите, изработени в клуба. </p>
+</div>
+</div>
+<div class="card ">
+  <h1>На 15.04.2016 година</h1>
+  <p>учениците Мартин Михалев и Мариян Касъров от Xе клас и Димитър Дерменджиев от XIе клас с ръководител инж. Албена Колева взеха участие във финала на Първото национално средношколско състезание „Енергетиката и ние“, организирано от Община Варна, Регионалния инспекторат по образованието – Варна, Технически университет –Варна и Професионалната гимназия по електротехника – Варна. Форумът е приемник и продължител на традициите на националната ученическа конференция „Енергия на бъдещето“ Мартин Михалев от от X е клас получи специалната награда на „Енерго-Про“ ЕАД за креативна идея на своята презентация.</p>
+</div>
+<div class="card ">
+  <h1>В края на м. април 2017 година</h1>
+  <p>в Технически колеж – гр. Ловеч бе поставено началото на Национално състезание по Електротехника. организирано от Асоциация на професионалните гимназии по електротехника, електроника и компютърни технологии. Нашето училище беше  представено от Иван Найденов - XII”е” клас,  Мартин Михалев и Иван Попов от XI „е“ клас, Даниел Георгиев от X „е“ клас.   Ръководител на отбора бе инж. Албена Колева. Момчетата  се представиха блестящо. Техните знания и умения бяха на ниво и заслужено бяха отличени с ПЪРВО място.</p>
+ <div class="row">
+<img class="imp"  src="images/eop5.JPG" alt="">
+<img class="imp"  src="images/eop6.JPG" alt="">
+<img class="imp"  src="images/eop6_1.JPG" alt="">
+</div>
+</div>
+<div class="card ">
+  <h1>На 01.03.2018 година </h1>
+  <p>в Технически колеж – гр. Ловеч за втора година се проведе Национално състезание по Електротехника, организирано от Асоциация на професионалните гимназии по електротехника, електроника и компютърни технологии. Нашето училище беше  представено от Мартин Михалев, Иван Попов от XII „е“ клас и Неделчо Неделчев от XI „е“ клас.   Ръководител на отбора бе инж. Албена Колева. Ценните и насоки и съвети, които даваше на участниците преди и по време на състезанието, им помогнаха да преодолеят притеснението си и за пореден път да се представят на ниво. Отбора ни отново бе отличени с ПЪРВО място.</p>
+ <div class="row">
+<img class="imp"  src="images/eop7.JPG" alt="">
+<img class="imp"  src="images/eop8.JPG" alt="">
+<img class="imp"  src="images/eop9.JPG" alt="">
+</div>
+</div>
+<div class="card big">
+  <div class="card-title ss" >
+  <h1>През м. март 2018г.</h1>
+  <p>Мартин Михалев участва във Втората конференция “Да мислим екологично за бъдещето”, организирана от Университет “Проф. д-р. Асен Златаров” Бургас и Община Бургас и за своята презентация бе отличен с Трето място. </p>
+</div>
+  <img class="imp"  src="images/eop10.JPG" alt="">
+  <img class="imp"  src="images/eop11.jpg" alt="">
+</div>
+<div class="card big">
+  <div class="card-title s" >
+  <p>И поредната награда за тази учебна година бе получена на 30 март в ТУ Варна на Конференцията “Енергетиката и ние”, в която взеха участие повече от 140 ученици от различни краища на страната. Момчетата от XII “е” клас Мартин Михалев, Марин Маринов и Иван Попов представиха презентация и бяха удостоени с второ място.  </p>
+</div>
+  <img class="imp"  src="images/eop12.jpg" alt="">
+  <img class="imp"  src="images/eop13.jpg" alt="">
+</div>
+<div class="card big" style="justify-content:space-evenly;">
+  <div class="card-title" >
+  <h1>За положените усилия на всички участници в националните състезания през 2018 г. получихме и грамота от кмета на Община Бургас. <h1>
+</div>
+  <img style="height: 70vh; width: auto;" src="images/eop14.JPG" alt="">
+  
+</div>
+<div class="card big" style="padding-bottom:2vh;">
+  <div class="card-title " >
+  <p>В края на м. март 2019 год. в Технически колеж – гр. Ловеч се проведе Национално състезание по Електротехника. По новите критерии отбора ни бе представен само от Никола Спасов XI “e” и Неделчо Петров Неделчев от XII „е“ клас.   Ръководител на отбора отново бе инж. Албена Колева. Само  една точка не достигна на  отбора, за да заеме първото място и бе отличен с ВТОРО място. </p>
+</div>
+  <img class="imp" src="images/eop15.JPG" alt="">
+  <img class="imp" src="images/eop16.JPG" alt="">
+</div>
+</main>
+    <a href="#" class="next " ><img src="images/arrow-up-chrome.gif"  ></a>
+        <a href="profesional.html" class="previous "><img src="images/arrow-left-chrome.gif" ></a>
+        
+<footer></footer>
+</body>
+</html>

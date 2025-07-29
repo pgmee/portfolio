@@ -1,0 +1,99 @@
+*{
+        margin: 0px;
+        padding: 0px;
+    } 
+     body{
+        font-family: "Philosopher", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        background-color: #f8f9fa;
+        background-image: url('images/belbg.jpg');
+      background-position:bottom;  
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+        }
+   header {
+      
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content:space-between;
+      border-bottom: 1px solid #dee2e6;
+    }
+     .header-logo {
+      height: 130px;
+    }
+
+   .navbar-custom {
+      background-color: #005e92;
+    }
+  .navbar-custom .navbar-brand,
+  .navbar-custom .nav-link{
+    color: #ffffff !important;
+    font-size: 1.1rem;
+  }
+  .navbar-custom .navbar-brand:hover {
+    color: #fdb700 !important;}
+  .navbar-custom .nav-link:hover {
+    color: #fdb700 !important;
+  }
+  .navbar-custom .dropdown-item:hover {
+   background-color: rgba(255, 255, 255, 0.1);
+    color:  #fdb700 !important;  
+  }
+  
+    /* Покажи подменюто при hover */
+    .nav-item.dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: 0; /* премахва забавянето */
+    }
+
+    /* Добавяне на разделители в dropdown */
+    .dropdown-divider {
+      margin: 0.3rem 0;
+    }
+
+    .nav-link, .dropdown-item {
+      cursor: pointer;
+    }
+   
+    h1 {
+      font-size: 2rem;
+      margin: 0;
+      text-align: center;
+      font-weight: 700;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin: 2vh 0px;
+      text-align: center;
+      font-weight: 700;
+      color: #013476;
+    }
+    p{
+      font-size: 1.1rem;
+        text-align: justify;
+    }
+    a{
+        color: #013476;
+    }
+    footer{ 
+    height: 33vh;   
+    background-image: url("images/bgPF.png");
+    background-position:bottom;
+    background-size:100%;
+    background-repeat: no-repeat;
+    }
+
+    @media (max-width: 768px) {
+        footer{ 
+     height: 17vh;   
+    }
+    }
+
+    @media (max-width: 480px) {
+           footer{ 
+     height: 13vh;   
+    }
+    }

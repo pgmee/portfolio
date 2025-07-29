@@ -1,0 +1,159 @@
+body{
+    background-image: url('images/sport10.jpg');
+    background-color:#C1C1C1;
+   /* background-color: #F7F8F6;*/
+    background-position:top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.3vw;
+    text-align: justify;
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-style: normal;   
+    color: #172029;
+ }
+ .main{
+    background-color:transparent;
+    width: 100vw;
+    margin: 1vh auto 3vh  ;
+}
+.d-block {
+    width: 47vw;
+    margin: 0px auto 3vh;
+}
+.tx{
+    width: 43%;
+}
+.vert{
+    width: 70%;
+}
+.card-title{
+    width:100%;  
+}
+.inn{
+display:flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+}
+.carousel-inner{
+width: 90%;
+margin: auto;
+}
+.carousel-item{
+transition-duration: 5s;
+transition: transform 1.5s ease, opacity .5s ease-out;
+margin-bottom: 2vh;
+}
+h1{
+    font-size: 6vh;
+    text-align: center;
+    font-weight: 900;
+}
+h2{
+font-size: 2.5vw;
+font-weight: 900;
+text-align: center;
+}
+h4{
+font-size: 1.8vw;
+margin: 2vh auto;
+}
+.carousel-control-prev,
+.carousel-control-next {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+/*background: rgba(0, 0, 0, 0.5);  Optional: Change background color */
+width: 2vw; /* Optional: Adjust arrow container width */
+height: 5vh; /* Optional: Adjust arrow container height */
+}
+.carousel-control-prev {
+left: 15px; /* Move the previous arrow 20 pixels to the right */
+}
+.carousel-control-next {
+right: 15px; /* Move the next arrow 20 pixels to the left */
+}
+.carousel-indicators {
+margin: 3rem 15% 0px;
+}
+  
+.previous  {
+position: fixed;
+    bottom:11vh;
+    right:3vw; 
+}
+a.previous img, a.next img {
+width: 120%; /* Увеличаване на ширината за по-добра видимост */
+max-width: 20vw; /* Може да коригирате стойността според нуждите */}
+
+@media (max-width: 768px) {
+.carousel-control-prev,
+.carousel-control-next {
+position: absolute;
+top: 25%;
+transform: translateY(-25%);
+background: rgba(0, 0, 0, 0.5); /* Optional: Change background color */
+width: 2vw; /* Optional: Adjust arrow container width */
+height: 5vh; /* Optional: Adjust arrow container height */
+}
+.carousel-control-prev {
+left: 1vw; /* Move the previous arrow 20 pixels to the right */
+}
+.carousel-control-next {
+right: 1vw; /* Move the next arrow 20 pixels to the left */
+}
+a.previous img {
+position: fixed;
+    bottom:15vh;
+    right:7vw; 
+    width:12vw;
+    height: 7vh;     
+}
+h1{
+    font-size: 3vh;
+}
+h2{
+    font-size: 3vw;
+}
+h4{
+    font-size: 2.3vw;
+    margin: 2vh auto;
+}
+
+}
+@media (max-width: 480px) {
+.carousel-control-prev,
+.carousel-control-next {
+position: absolute;
+top: 20%;
+transform: translateY(-20%);
+background: rgba(0, 0, 0, 0.5); /* Optional: Change background color */
+width: 2vw; /* Optional: Adjust arrow container width */
+height: 5vh; /* Optional: Adjust arrow container height */
+}
+.carousel-control-prev {
+left: 1vw; /* Move the previous arrow 20 pixels to the right */
+}
+.carousel-control-next {
+right: 1vw; /* Move the next arrow 20 pixels to the left */
+}
+a.previous img {
+      position: fixed;
+          bottom:3vh;
+          right:3vw; 
+          width:12vw;
+          height: 7vh;
+      }
+      h1{
+        font-size: 3.5vh;
+    }
+h2{
+    font-size: 3.5vw;
+}
+h4{
+    font-size: 2.5vw;
+    margin: 1vh auto;
+}
+}

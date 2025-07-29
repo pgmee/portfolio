@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="icon" href="images/LOGO_PGMEE_1_nov.png">
+<link rel="stylesheet" href="buttons.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <title>ПОРТФОЛИО НА ПГМЕЕ - Бургас</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+body{
+   background-image: url('images/1.jpg');
+    background-position:center;  
+    background-repeat: no-repeat;
+    background-color:lightgray;
+    background-attachment: fixed;
+    background-size:cover;
+}
+.card{
+width: 88%;
+margin: auto;
+background-color: #06565F;
+color: white;
+margin-top: 3vh;
+padding: 1vh 1vw;
+}
+.s{
+ width: 45%;
+}
+div.card h1{
+    font-size:1.5rem;
+    text-align: center;
+}
+h4{
+    font-size:1,6 vw;
+    text-align: center;
+}
+img{
+    transition: transform 2s;
+}
+img:hover{
+    transform: scale(1.1)
+}
+
+.big{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.card-title{
+  width:35%;
+}
+.wide{
+  width:95%; 
+}
+.row{
+    justify-content: space-evenly;
+    align-items: center;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+p{
+  margin-top: 2vh;
+}
+a.previous img, a.next img {
+  width: 90%; 
+  max-width: 20vw; }
+  @media (max-width: 768px) {
+    a.previous img {
+      position: fixed;
+        bottom:5vh;
+        right:7vw; 
+        width:9vw;
+        height: 6vh;
+    } 
+    a.next img {
+    position: fixed;
+        bottom:12vh;
+        right: 1vw; 
+        width: 6vw;
+        height: 7vh;
+  }
+  div.card h1{
+    font-size: 3.5vw;
+    text-align: center;
+}
+p{
+    font-size:2.5vw;
+}
+.row{
+  flex-direction: column;
+}
+.card{
+  width: 75%;
+}
+.big{
+  flex-direction: column;
+}
+.s{
+  width: 75%;
+}
+.card-title, p{
+  font-size:2.5vw;
+}
+  }
+  @media (max-width: 480px) {
+  
+  a.previous img {
+    position: fixed;
+        bottom:5vh;
+        right:9vw; 
+        width:9vw;
+        height: 6vh;
+    }
+    a.next img {
+    position: fixed;
+        bottom:12vh;
+        right: 4vw; 
+        width: 7vw;
+        height: 6vh;
+    }
+    .card-title{
+  font-size:3vw;
+}
+   p{
+  font-size:3.5vw;
+}
+  .card, .s{
+  width: 80%;
+}
+}
+    </style>
+</head>
+<body >
+     <header>
+    <img src="images/LOGO_PGMEE_1_nov.png" alt="Лого" class="header-logo">
+      <div>
+      <h2  style="font-size:1.8rem;"> ПРОФЕСИОНАЛНА ГИМНАЗИЯ ПО МЕХАНОЕЛЕКТРОТЕХНИКА И ЕЛЕКТРОНИКА – Бургас
+      </h2>
+      <h1 style="font-size:3.5rem; margin-top: 2vh;">П О Р Т Ф О Л И О</h1>
+    </div>
+  </header>
+  <!-- Навигационно меню -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" title="Начало">
+  <i class="bi bi-house-door-fill fs-4"></i>
+</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+    <li class="nav-item"><a class="nav-link" href="vision.html">Визия и мисия</a></li>
+          <!-- Меню с подменю -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button">
+            История
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="direktori.html">Директори</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="rabotilnici.html">История на работилниците</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="biblioteka.html">История на библиотеката</a></li><hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="pastpresent.html">Миналото днес</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="symbols.html">Символи</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="filmi.html">Филми</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="vestnici.html">Вестници</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="almanah.html">Юбилеен алманах</a></li>
+            </ul>
+          </li>
+            <!-- Меню с подменю -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button">
+            Покорени върхове
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="profesional.html">Професионална подготовка</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="math.html">Математика и ИТ</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="nauki.html">Обществени и природни науки</a></li><hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="bel.html">Литература</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="languages.html">Езици</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="fvs.html">Спорт</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="teachers.html">Почетни награди и отличия на учители</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="inovations.html">Иновативно училище</a></li>
+          <li class="nav-item"><a class="nav-link" href="proekti.html">Проекти</a></li>
+          <li class="nav-item"><a class="nav-link" href="kvalifikacii.html">Квалификации</a></li>
+           <li class="nav-item"><a class="nav-link" href="traditions.html">Традиции</a></li>
+            <li class="nav-item"><a class="nav-link" href="team.html">Училищен екип</a></li>
+            <li class="nav-item"><a class="nav-link" href="vr.html">Виртуална разходка</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="container-fluid mt-2">
+  <h1 style="color: white;">ЕЛЕКТРОНИКА</h1>
+    <div class="row" >
+      <div class="card s" >
+        <h1>Отбор “Механо” в топ тройката на международния фестивал FIRST LEGO League Challenge - 20 април 2024 г.</h1>
+        <div class="column"  > 
+      <img style="width: 80%;" src="images/85.jpeg" alt="">
+      <div class="card-title wide" > 
+      <p>Отбор “Механо” от ПГМЕЕ – Бургас, съставен от ученици от осми и десети клас – Даниел Георгиев, Даниел Нейчев, Димитър Петров, Дейвид Желязков, Джефер Ходжов и Роман Мартинов, под ръководството на инж. Бояна Георгиева, инж. Анна Златанова и инж. Никола Чанев, се отличи с впечатляващо представяне и завоюва ТРЕТО място.</p>
+    </div></div></div>
+      <div class="card s" >
+          <h1>ПГМЕЕ с успех на НС по приложна електроника “Мога и зная как” - април 2024г.</h1>
+          <div class="column"  > 
+        <img style="width: 66%;" src="images/86.jpg" alt="">
+        <div class="card-title wide" > 
+        <p>За първи път в историята на НС по приложна електроника “Мога и зная как” отборът на „Механо” – Бургас се класира за финалите. Цветан Калудов и Петран Ганев заеха призовото ТРЕТО място във втора възрастова група. Ръководителят на отбора инж. Бояна Георгиева, бе наградена от МОН с плакет за принос в професионалното образование. </p>
+      </div></div></div>
+      </div>
+    <div class="row" >
+      <div class="card s" >
+        <h1>Регионален кръг на НС „Мога и зная как“ - 29.03.2024 г., гр. Варна </h1>
+        <div class="column"  > 
+      <img style="width: 75%;" src="images/81.jpg" alt="">
+      <div class="card-title wide" > 
+      <p>Отборите на ПГМЕЕ от IX-X клас (Владимир Владимиров и Димитър Долапчиев) се класираха на ТРЕТО място, а от XI-XII клас (Петран Ганев и Цветан Калудов) - на ВТОРО място. Цветан Калудов спечели ТРЕТО индивидуално място, а Петран Ганев - ЧЕТВЪРТО. Ръководители на отборите са инж. Бояна Георгиева и инж. Никола Чанев. </p>
+    </div></div></div>
+      <div class="card s" >
+          <h1>Петото издание на младежкото състезание ЕЛЕКТРОНИАДА 2024 - 13.04.2024, гр. Русе</h1>
+          <div class="column"  > 
+        <img style="width: 82%;" src="images/83.jpg" alt="">
+        <div class="card-title wide" > 
+        <p>ПГМЕЕ участва за втора година в състезанието със следните 2 отбора: Теодора Славова, Хакан Сали, Неджати Рашид от 12з клас и Калинка Петрова от 11и клас, Георги Житомиров от 11з клас, Себастиян Киров от 10з клас.<br> Отборът на 12з клас се отличи с призово място, постигайки над 80 точки.</p>
+      </div></div></div>
+      </div>
+    <div class="card" > 
+      <h1 >ОТБОР „МЕХАНО“ ОТНОВО НА ВЪРХА НА РОБОТИКАТА В БЪЛГАРИЯ!</h1>  
+      <div class="row">
+        <img style="width: 55%; height: auto; " src="images/82.jpg" alt="">  
+      <p class="s">Отборът на ПГМЕЕ – Бургас „Механо“, под ръководството на инж. Анна Златанова и инж. Бояна Георгиева, постигна забележителни успехи.
+        Учениците Даниел Георгиев, Даниел Нейчев, Дейвид Желязков, Константин Златарев, Наско Дакашев, Петран Ганев и Михаил Колев спечелиха призови места във всяка категория. Сред тях, Наско от 10 Б клас стана първият ученик, преминал през целия „3D лабиринт“ и спечели първо място. Отборът завоюва първи места и в категориите „LEGO Мини сумо“, „LEGO Следене на линия“ и най-добър дизайн на робот в стил „ROYAL“.
+        Други успехи включват трето място в „Мини сумо“ и четвърто място в „Следене на линия“. Така отбор „Механо“ се утвърди като най-успешния отбор с най-много спечелени купи за втора поредна година. 
+        </p></div>
+    </div></div>
+    <div class="row" >
+      <div class="card s" >
+          <h1>Регионален технологичен форум „Инженери в действие“ - 28 и 29 октомври 2023 г.</h1>
+          <div class="row " > 
+        <img class="s" src="images/75.jpg" alt="">
+          <p class=" s">Явор Тенчев от 10Б клас спечели призовото второ място и бе награден със сертификат и два броя ролки с материал за 3D принтер, с които той да реализира своите идеи в училищния клуб по “3D моделиране и принтиране”.
+          Отборът на Механо взе участие във всичките проведени състезания в рамките на форума и беше награден със сертификат за Инженерна отдаденост и ваучер за 512 лв.
+          .</p>
+      </div></div>
+      <div class="card s" >
+          <h1>Четвърто издание на младежкото състезание ЕЛЕКТРОНИАДА 2023</h1>
+          <div class="column"  > 
+        <img style="width: 65%;" src="images/66.jpg" alt="">
+        <div class="card-title wide" > 
+        <p>От ПГМЕЕ за първи път участваха два отбора, включващи ученици от 11 и 12 клас, с ръководител инж. Драгомир Чолаков. Хакан Сали получи отличие за своето представяне.  </p>
+      </div></div></div>
+      </div>
+    <div class="card" >   
+      <h1>Отборът „МЕХАНО” – най-добър в националното състезание по роботика „Дни на Роботиката 23” - 27 и 28 април 2023г.</h1>
+      <div class="row">
+        <img  class=" s" src="images/68.jpg" alt="">
+      <p class=" s" >Отборите на ПГМЕЕ се състезаваха в четирите категории: „Следене на линия“, „Мини сумо“, „3D лабиринт“ и „LEGO Следене на линия“. Екипът на „МЕХАНОТО“ бе единственият, който спечели призови места във всички категории. Отбор „МЕХАНО 1“: Кристиян Селезньов, Михаил Колев, Цветан Калудов, ментор Анна Златанова и Отбор „МЕХАНО 2“: Константин Златарев, Николай Николов, Ясен Златев, ментор Бояна Георгиев се представиха отлично, като се класираха в челната тройка във всяка категория.<br>
+        Резултати:
+        3D лабиринт – второ място;
+        Следене на линия – второ място;
+        LEGO Следене на линия – второ място;
+        Мини сумо – второ място.  
+        </p></div>
+    </div>
+    <div class="row" >
+      <div class="card s" >
+        <h1>Регионален кръг на състезанието „Мога и зная как” 15.04.2021 г.</h1>
+        <div class="column"  > 
+      <img style="width: 80%;" src="images/52.jpg" alt="">
+      <div class="card-title" style="width: 100%; margin-bottom: -1vh;"> 
+      <p>Във втора възрастова група Николай Вълчанов (12Ж клас) и Светлин Генов (11Ж клас) спечелиха ТРЕТО място в отборното класиране, а Николай Вълчанов стана ТРЕТИ в индивидуалната надпревара. </p>
+    </div></div></div>
+      <div class="card s" >
+          <h1>Конкурс за млади изобретатели „Миню Балкански“ 13.06.2021 г. в с. Оряховица</h1> 
+          <div class="column"  > 
+            <img style="width: 70%;" src="images/53.jpg" alt="">
+        <div class="card-title" style="width: 100%; margin-bottom: -1vh;"> 
+        <p>Проектът на ПГМЕЕ „Умен чин“, реализиран от Кристиан Каракабзамалов и Теодор Стоянов от 12 „З“ клас под ръководството на инж. Анна Златанова, спечели ВТОРО място на конкурса. </p>
+      </div></div></div>
+      </div>
+    <div class="card" >   
+      <h1>Клубът по роботика на Механото, член на PARA (Професионална Асоциация по Роботика и Автоматика)</h1>
+      <div class="row">
+        <img class="s"  src="images/44.jpg" alt="">
+      <p class="s">На 14.12.2019 г. в София се проведе второто за годината състезание по роботика „Робо Лига“. В първи кръг – следене на линия, нашите три колички се подредиха на трето, четвърто и пето място. Във втори кръг представихме собствена разработка на катапулт, реализиран с „Лего” и управляван с микроконтролер през телефон чрез Bluetooth. В трети кръг – 3D лабиринт, се класирахме на трето място, а в четвърти кръг – мини сумо, нашите две колички се бориха за второто и трето място. Спечелихме едно ВТОРО и три ТРЕТИ места. След състезанието Кристиян Михайлов, президент на PARA похвали отбора и го включи в асоциацията.
+        </p></div>
+    </div>
+    <div class="row" >
+      <div class="card s" >
+        <h1>„Хакатон – Бургас“,  10-12 май 2019г.</h1>
+        <div class="column"  > 
+      <img style="width: 60%;" src="images/36.jpg" alt="">
+      <div class="card-title wide" style=" margin-bottom: -1vh;"> 
+      <p>Галина Иванова, ученичка от 11 „З“ клас, специалност „Компютърни мрежи“ в ПГМЕЕ – Бургас, спечели ПЪРВО място отборно на тридневния „Хакатон – Бургас“ за софтуерни продукти с тематика „Създаване на приложения и игри за обучение и/или виртуална реалност“.</p>
+    </div></div></div>
+      <div class="card s" >
+          <h1>Механото с 4 награди на състезанието „Робо Лига – Бургас“ - 26 октомври 2019 г.</h1> 
+          <div class="column"  > 
+            <img style="width: 75%;" src="images/41_1.jpg" alt="">
+        <div class="card-title wide" style=" margin-bottom: -1vh;"> 
+        <p>Едно ПЪРВО място, две ВТОРИ и едно ТРЕТО място спечелиха учениците на ПГМЕЕ и техният ръководител инж. Анна Златанова. Отборите на ПГМЕЕ постигнаха изключителни резултати и безапелационна победа в Мини сумо, представиха и впечатляващи проекти като „Поялна станция“ и „Умна лампа“.</p>
+      </div></div></div>
+      </div>
+    <div class="card" >   
+    <h1>Ученици от ПГМЕЕ-Бургас спечелиха ПЪРВО място на състезание по роботика „Robbo Challenge Burgas“, проведено на 7 май 2019 г.</h1>
+    <div class="row">
+    <p class="  s">Отборът на ПГМЕЕ-Бургас бе съставен от ученици от клуба „Приложение на микроконтролери“: Владимир Селезньов, Мартин Николов, Божидар Русев, Димитър Димитров, Петър Кръстев, Галина Иванова, Иван Желязков, Пламен Лозев, Габриел Киров и Николай Авелов с ръководител инж. Анна Златанова. Състезанието протече в четири оспорвани кръга, като заслугите на нашите ученици са:<br>
+      Първо място в първи кръг (мини сумо) – Владимир Селезньов, Божидар Русев и Петър Кръстев.<br>
+      Трето място в четвърти кръг (демонстрация на роботи) – Владимир Селезньов с проект „Поялна станция“.<br>
+      Четвърто място в четвърти кръг (демонстрация на роботи) – Владимир Селезньов, Мартин Николов, Божидар Русев и Димитър Димитров с проект „Умна лампа“.
+      </p>
+  <img class="s" src="images/35.jpg" alt="">
+  </div></div>
+    <div class="row" >
+      <div class="card s" >
+        <h1>Регионален кръг на НС “Мога и зная как”, 29.03.2019г., гр. Варна </h1>
+        <div class="column"  > 
+      <img style="width: 60%;" src="images/33.jpg" alt="">
+      <div class="card-title wide" style=" margin-bottom: -1vh;"> 
+      <p>В групата 9-10 клас Николай Николаев Вълчанов (10ж клас) и Никола Георгиев Попов (10з клас) се класираха на четвърто място. В групата 11-12 клас Владимир Стойчев Селезньов (11и клас) и Иван Георгиев Спасов (11и клас) се класираха на трето място. Ръководители на двата отбора са инж. Анна Златанова и инж. Костадин Терзиев.</p>
+    </div></div></div>
+      <div class="card s">
+          <h1>Състезание “Светът е електроника” - 8 март 2019 г., гр. Плевен</h1>
+          <div class="row " > 
+        <img class="s" src="images/32.jpg" alt="">
+        <img class="s" src="images/32_1.jpg" alt=""></div>
+        <div class="card-title wide" style="margin-bottom: -1vh;"> 
+        <p>Нашето училище се представи достойно с два отбора в двете възрастови групи. Николай Николаев Вълчанов (10ж) и Никола Георгиев Попов (10з) от отбор „9-10 клас“ се класираха на ЧЕТВЪРТО място, а Владимир Стойчев Селезньов (12и) и Иван Георгиев Спасов (12и) от отбор „11-12 клас“ се класираха на ВТОРО място.</p>
+      </div></div>
+     
+      </div>
+    <div class="row" >
+      <div class="card s" >
+          <h1>Участие на “Mehano-team” в Shell Eco-Marathon 2018 Turkey</h1>
+          <div class="row " > 
+        <img class="s" src="images/25.jpg" alt="">
+        <p class="s">Отборът на ПГМЕЕ – "Mehano": Велин Георгиев – пилот, Антон Стойчев – резервен пилот, Атанас Христов – механик и електрончик
+          и неговият "Batkomobil" взеха участие в  състезанието за енергийна ефективност  Shell Eco-Marathon 2018 Turkey, което се проведе от 20.09 – 24.09.2018г в гр.Истанбул.</p>
+      </div></div>
+      <div class="card s" >
+          <h1>Изложение „Младежко техническо творчество” в гр. Горна Оряховица, 11-13 октомври 2018 г.</h1>
+          <div class="column"  > 
+        <img style="width: 70%;" src="images/26.jpg" alt="">
+        <div class="card-title wide" > 
+        <p>Отборът на ПГМЕЕ – Бургас представи своя прототип на електроавтомобил “Баткомобил”, който получи Специална награда, както и овациите на публиката и журито. ПГМЕЕ – Бургас получи и ваучер за 600 лева за своя "Баткомобил". 
+          </p>
+      </div></div></div>
+      </div>
+      <div class="card big">
+        <div class="s">
+      <h1 >Отборът на ПГМЕЕ спечели бронзов медал на Националното състезание “Асемблиране на PC”, организирано от Асоциацията на професионалните гимназии в България и проведено в Плевен. </h1>
+      <p>Отборът на ПГМЕЕ, съставен от трима ученици, постигна 49 точки и завърши на четвърто място в теоретичния етап. В практическата задача те сглобиха компютър за 11 минути и 26 секунди, което им донесе 15 точки и трето място. В крайното класиране отборът се класира на ТРЕТО място с 64 точки и бронзов медал.  </p></div>
+    <img class="s" src="images/21.jpg" alt="">
+    </div>
+  <div class="row" >
+      <div class="card s" >
+          <h1>Състезание “Светът е електроника” - 8 март 2018 г. гр. Плевен</h1>
+          <div class="row " > 
+        <img class="s" src="images/20.jpg" alt="">
+        <p class="s"> Диана Щербина от 9з клас и Калян Иванов от 10и клас се класираха на ТРЕТО място в групата 9-10 клас. Във втора възрастова група 11-12 клас достойно се представиха Иван Спасов от 11и клас и Мюмюн Шукри от 12и клас с ръководител инж. Костадин Терзиев.</p>
+      </div></div>
+      <div class="card s" >
+          <h1>Регионален кръг на НС “Мога и зная как”, 2018г. гр. Варна </h1>
+          <div class="column"  > 
+        <img style="width: 60%;" src="images/22.jpg" alt="">
+        <div class="card-title wide" > 
+        <p>Йордан Бинев от 12и клас и Владимир Селезньов от 11и клас се класираха на ЧЕТВЪРТО място в групата 11-12 клас.</p>
+      </div></div></div>
+      </div>
+      <div class="card big">
+          <div class="s" >
+        <h1>Изложение „Младежко техническо творчество” в гр. Горна Оряховица - 12 октомври 2017 г.</h1>
+        <p>В изложението участваха над 50 екипа от България, Румъния и Украйна и бяха представени съвременни разработки в областта на технологиите, роботиката, електрониката и автоматиката.
+          ПГМЕЕ – Бургас беше представена от клуб Електроника с ръководител инж. Диана Илиева. Велин Георгиев от 10 ж клас представи своята лично изработена яхта с дистанционно управление. Георги Георгиев и Николай Вълчанов от 9 ж клас представиха оптичен парапет за незрящи хора, изработен в действителни размери, с електроника, предоставена от фирма Ес Ем Си ИАБ ЕООД. Отборът на ПГМЕЕ получи плакет и диплом за участие. </p></div>
+      <img class="s" src="images/18.jpg" alt="">
+      </div>
+      <div class="row" >
+          <div class="card s" style=" height: 65%;">
+              <h1>Състезание “Асемблиране на РС”, 24 март 2017 г. в гр. Плевен /организирано от АПГЕЕКТ/</h1>
+              <div class="row " > 
+            <img class="s" src="images/15.jpg" alt="">
+            <p class="s">Учениците Жулиян Иванов Димитров, Петър Тодоров Раев, Пламен Стоянов Янчев и Руслан Веселинов Андонов, с ръководител инж. Добрин Стоянов, се класираха на ВТОРО място.</p>
+          </div></div>
+          <div class="card s" >
+              <h1>Регионален кръг на НС “Мога и зная как”, 31 март 2017г. в Техническия университет – Варна </h1>
+              <div class="row"  > 
+            <img class="s" src="images/16.jpg" alt=""> 
+            <p class="s">Отборът на ПГМЕЕ, съставен от Владимир Селезньов и Мирослав Киров, се класира на ЧЕТВЪРТО място. </p>
+          </div></div>
+          </div>
+      <div class="row" >
+          <div class="card s" >
+              <h1>Състезание “Светът е електроника” - 17 март 2017г. гр. Плевен</h1>
+              <div class="row " > 
+            <img class="s" src="images/13.jpg" alt="">
+            <p class="s"> В състезнието участваха отбори от професионални гимназии, членове на асоциация АПГЕЕКТ. Отборът на ПГМЕЕ, съставен от Мирослав Киров и Владимир Селезньов от 10и клас се класира на ТРЕТО място.</p>
+          </div></div>
+          <div class="card s" >
+              <h1>Хакатон 2017 на тема “Създаване на софтуерни приложения за околната среда на град Бургас” </h1>
+              <div class="row"  > 
+            <img class="s" src="images/14.jpg" alt="">
+            <p class="s">В Университет “Проф. д-р. Асен Златаров” – Бургас, отборът на ПГМЕЕ, съставен от Стоян Колев и Стоян Тодоров от 12з клас, се класира на ТРЕТО място. </p>
+          </div></div>
+          </div>
+      <div class="card big">
+          <div class="card-title" style="width: 70%;">
+        <h1>Изложение „Младежко техническо творчество” в гр. Горна Оряховица - 28 и 29 октомври 2016 г.</h1>
+        <p>Отбор „ОПТРОН” от ПГМЕЕ гр. Бургас представи гимназията на изложението „Младежко техническо творчество”. Проектът им „Пешеходна пътека за незрящи хора”, с ръководител инж. Диана Илиева, спечели плакет, грамоти, диплом и парична награда. Изложението привлече участници от БАН, бизнеса и учебните заведения от цялата страна. Особен интерес предизвика проектът на отбора, който получи специална покана за участие през следващата година от председателя на Фондация „Милен Григоров” – г-н Вл. Григоров.
+          </p></div>
+      <img style="height: 45vh; width: auto;" src="images/11.jpg" alt="">
+      </div>
+      
+  <div class="row" style="margin-bottom: 3vh;">
+  <div class="card s" >
+      <h1>Регионален кръг на НС по приложна електроника “Мога и зная как” - 17 март 2015г., гр. Варна</h1>
+      <div class="row" style="margin: 4vh 0px;"> 
+    <img class="s" src="images/6.jpg" alt="">
+    
+    <p class="s"> Под ръководството на инж. Костадин Терзиев, учениците Петко Стайков от 11ж клас и Дочко Дочев от 12и клас се представиха отлично и отборно се класираха на ТРЕТО място.</p>
+  </div></div>
+  <div class="card s" >
+      <h1>Регионален кръг на НС по приложна електроника “Мога и зная как” - 2016 г., гр. Варна</h1>
+      <div class="row"> 
+    <img class="s"src="images/9.jpg" alt="">
+    <p class="s">Учениците Петко Стайков (12ж клас) и Добромир Демирев (12и клас) се класираха на 4-то отборно място във втора възрастова група, а Петко Стайков спечели 3-то място в индивидуалното класиране, което му гарантира място в кандидат-студентската кампания в ТУ-Варна. </p>
+  </div></div>
+  </div>
+  </main>
+    <a href="#" class="next " ><img src="images/arrow-up-chrome.gif" ></a>
+        <a href="profesional.html" class="previous "><img src="images/arrow-left-chrome.gif" ></a>
+<footer></footer>
+      </body>
+</html>

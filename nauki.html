@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="icon" href="images/LOGO_PGMEE_1_nov.png">
+<link rel="stylesheet" href="buttons.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <title>ПОРТФОЛИО НА ПГМЕЕ - Бургас</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+.nauki{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#nauki{
+  height:100vh;
+  background-image: url('images/nauki1.jpg');
+  background-position:center;
+  /*background-attachment: fixed;*/
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+#on{
+  display: none;
+  height:auto;
+  background-image: url('images/s5.jpg');
+  background-position:center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size:cover;  
+}
+#pn{
+  display: none;
+  height:auto;
+  background-image: url('images/pn4.jpg');
+  background-position:top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size:cover; 
+  color:white
+}
+.card{
+  width: 30vw;
+  height: auto;
+  background-color: transparent;
+  padding: 0px;
+  transition: transform 2s;
+}
+.cards{
+  width: 40vw;
+  height: auto;
+  background-color: transparent;
+  transition: transform 2s;
+  color: white;
+  margin: auto 4vw;
+}
+.card:hover{
+    transform: scale(1.1)
+}
+.container-fluid{ 
+    width: 100%;  
+}
+div.card h1{
+    font-size: 3vw;
+    text-align: center;
+    margin: 4% auto ;
+}
+h4{
+  font-size: 1.7vw;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+}
+h3{
+  font-size: 1.5vw;
+  font-weight: 700;
+  color: white; 
+}
+div.nauki div.card {
+    margin-top: 3%;
+  }
+div.card a{
+    text-decoration: none;
+    color: #212529;  
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly; 
+  align-items: center;
+  margin: 2vh auto;
+  width: 90%;
+}
+.card-text{
+  width: 70%;
+  color: white;
+  padding: 2vh 4vw ;
+}
+p{
+  color: white;
+}
+section#on div.card{
+  width: 45%;
+}
+img.card{
+  width: 55%;
+  margin: auto 2vw;
+}
+.column{
+  width:60%;
+   padding: 2vh auto; 
+}
+.vert{
+  width: 80%;
+  margin: auto;
+}
+a.previous img, a.next img {
+  width: 90%; /* Увеличаване на ширината за по-добра видимост */
+  max-width: 20vw; /* Може да коригирате стойността според нуждите */}
+  @media (max-width: 768px) {
+    h4{
+  font-size: 3vw;
+}
+
+h3{
+  font-size: 2.5vw;
+  font-weight: 700;
+  color: white; 
+}
+.card-text{
+  width: 95%;
+  margin: auto;
+}
+      a.previous img {
+      position: fixed;
+        bottom:5vh;
+        right:7vw; 
+        width:9vw;
+        height: 6vh;
+    } 
+    a.next img {
+    position: fixed;
+        bottom:12vh;
+        right: 1vw; 
+        width: 6vw;
+        height: 6vh;
+  }
+  div.nauki div.card {
+    margin-top: 25%;
+  }
+  .row{
+    flex-direction: column;
+  }
+  section#on div.card{
+  width: 85%;
+margin: 1vh auto;
+}
+section#pn div.card{
+  width: 85%;
+margin: 1vh auto;
+}
+img.card{
+  width: 85%;
+  margin: 1vh auto;
+}
+.column{
+  width: 85%;
+}
+  h1{
+    font-size: 5vw;
+    text-align: center;
+    margin: 4% auto ;
+}
+.vert{
+  width: 100%;
+}
+.cards{
+  width: 90%;
+}
+}
+     @media (max-width: 480px) {
+  
+        a.previous img {
+          position: fixed;
+              bottom:5vh;
+              right:5vw; 
+              width:9vw;
+              height: 6vh;
+          }
+          a.next img {
+          position: fixed;
+              bottom:12vh;
+              right: 1vw; 
+              width: 7vw;
+              height: 6vh;
+          }
+    }
+    </style>
+</head>
+<body >
+     <header>
+    <img src="images/LOGO_PGMEE_1_nov.png" alt="Лого" class="header-logo">
+      <div>
+      <h2  style="font-size:1.8rem;"> ПРОФЕСИОНАЛНА ГИМНАЗИЯ ПО МЕХАНОЕЛЕКТРОТЕХНИКА И ЕЛЕКТРОНИКА – Бургас
+      </h2>
+      <h1 style="font-size:3.5rem; margin-top: 2vh;">П О Р Т Ф О Л И О</h1>
+    </div>
+  </header>
+  <!-- Навигационно меню -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" title="Начало">
+  <i class="bi bi-house-door-fill fs-4"></i>
+</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+    <li class="nav-item"><a class="nav-link" href="vision.html">Визия и мисия</a></li>
+          <!-- Меню с подменю -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button">
+            История
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="direktori.html">Директори</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="rabotilnici.html">История на работилниците</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="biblioteka.html">История на библиотеката</a></li><hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="pastpresent.html">Миналото днес</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="symbols.html">Символи</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="filmi.html">Филми</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="vestnici.html">Вестници</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="almanah.html">Юбилеен алманах</a></li>
+            </ul>
+          </li>
+            <!-- Меню с подменю -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button">
+            Покорени върхове
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="profesional.html">Професионална подготовка</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="math.html">Математика и ИТ</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="nauki.html">Обществени и природни науки</a></li><hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="bel.html">Литература</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="languages.html">Езици</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="fvs.html">Спорт</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="teachers.html">Почетни награди и отличия на учители</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="inovations.html">Иновативно училище</a></li>
+          <li class="nav-item"><a class="nav-link" href="proekti.html">Проекти</a></li>
+          <li class="nav-item"><a class="nav-link" href="kvalifikacii.html">Квалификации</a></li>
+           <li class="nav-item"><a class="nav-link" href="traditions.html">Традиции</a></li>
+            <li class="nav-item"><a class="nav-link" href="team.html">Училищен екип</a></li>
+            <li class="nav-item"><a class="nav-link" href="vr.html">Виртуална разходка</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="container-fluid " id="nauki"> 
+    <div class="nauki">      
+        <div class="card shadow-lg"  >  <a href="#on" onclick="show(1)"> 
+          <h1 class="card-title" >ОБЩЕСТВЕНИ <br>НАУКИ</h1> 
+        </a>  </div>   
+         <div class="card  shadow-lg"  >  <a href="#pn" onclick="show(2)" >
+          <h1 class="card-title" >ПРИРОДНИ <br> НАУКИ</h1> </a>
+            </div>  
+        </div>
+            
+</section>
+  <section class="container-fluid" id="on"> 
+    <div class="card-text">
+      <h4  >2017 г.</h4>
+      <p>Ученическа конференция в гр. Котел по случай „150 години от смъртта на Георги Стойков Раковски“. <br>
+        Учениците от ПГМЕЕ: Стоян Маджаров, Мирослав Желев и Атанас Янакиев представиха достойно своето училище чрез своите есета.
+        Стоян Маджаров получи грамота за най-добро историческо есе.<br>
+        Ръководител: Светозар Люцканов 
+        </p>
+    </div>
+    <div  class="row">
+      <div class="card shadow-lg"  >
+        <img src="images/z1.jpg"  >     
+      </div> 
+      <div class="card shadow-lg"  >
+       <img src="images/z2.jpg"   >         
+      </div>    
+  </div>
+  <div class="card-text">
+    <h4  >Януари 2020 г. </h4>
+    <p>Участие в конкурс за най-добра мултимедийна презентация на тема „Будителите на моя роден край“. Конкурсът се организира от евродепутата от ЕНП -Асим Адемов, съвместно с РУО. Трима ученика взеха участие, като Гергана Димитрова от 12 ж получи грамота и поощрителна награда и бе избрана непосредствено преди победителката. Участие взеха и Дилян Папанчев от 12з и Патрик Петков от 12д клас ,които получиха сертификати за участие.  </p>
+    </div>
+  <div  class="row">
+    <div class="card shadow-lg"  >
+      <img src="images/z3.jpg"  >     
+    </div> 
+    <div class="card shadow-lg"  >
+     <img src="images/z4.jpg"   >     
+        
+    </div>  
+</div>
+<div class="row" >
+<div  class ="card column" style="border: none;">
+  <p>19.11-20.11.2021г година ПГМЕЕ – гр. Бургас взе участие в Пети национален ученически конкурс за историческа памет „Будител“ и в Национална ученическа конференция „200 години от рождението на Георги С. Раковски“ „…Мисъл и желязо, лира и тръба“ под патронажа на кмета на община Варна господин Иван Портних. От общо 250 участници от
+    цялата страна, ученикът Христо Минчев от 10 „ а“ клас успя да се класира сред 8-те най-добри в категория „ЕСЕ“ и бе удостоен с грамота .Той показа изследователски умения , вникване в  дълбочината на материята и добра аргументация , за да пресъздаде през своя поглед образа на великия Георги Раковски-идеологът на българското националноосвободително движение. Ръководител на ученика е г-н Светозар Люцканов - учител по история и цивилизации в
+    гимназията.
+    </p><hr style="color: white;">
+    <p>В периода 05.02-06.02.2023   ПГМЕЕ – гр. Бургас  взе участие в Национална ученическа конференция, организирана от СУ "Георги Раковски" гр. Котел и РУО Сливен, по случай 150 години от смъртта на Васил Левски . Темата бе  “Васил Левски-вулкан от човечност“  Нашата гимназия бе представена от 10 ученика, които изготвиха видео клипове свързани с Апостола на свободата.<br>Специалната награда на журито бе спечелена от Стоян Стоянов от 11 "а" клас, който написа  поема  в чест на  Васил Левски.    
+    </p>
+  </div>
+  <div class="card  " style="border: none;" >
+    <img class="vert" src="images/z5.png"  >     
+  </div>  
+</div>
+  <div  class="row">
+    <div class="card shadow-lg"  >
+      <img src="images/z7.jpg"  >     
+    </div> 
+    <div class="card shadow-lg"  >
+     <img src="images/z6.jpg"   >            
+    </div>    
+</div>
+<div  class="row" >
+    <div  class="column" >
+        <p >13.03.2024 Участие на ПГМЕЕ  в Националния ученически конкурс "Наследник съм на...", организиран от Министерство на отбраната, Централно военно окръжие и Съюзът на ветераните от войните на България. Калоян Колев от 11 И клас заслужи второ място. 
+        </p>
+        <div class="card " style="width: 100%; height: auto; "  >
+      <img class="shadow-lg" src="images/z9.jpg"  >   </div>  
+    </div> 
+    <div class="card "  style="border: none;" >
+     <img class="vert" src="images/z8.jpg"   >            
+    </div>    
+</div>
+<div  class="row" >
+    <div  class="card column" style="border: none;">       
+        <p  >Участие в областен кръг на Олимпиада по История и цивилизация 2020г. - Стоян Стоянов  10 з клас<br>Участие на областен кръг на Олимпиада по История и цивилизация 2024г. - Христо Ненов 
+        </p> <br><hr style="color: white;"><br>
+        <p>Участие в изложба по повод: “110 год.  от Балканските войни”- 10 кл./ 2023г.      </p>
+        <hr style="color: white;"></div>
+    <div class="card shadow-lg"  >
+     <img src="images/z12.jpg"   >            
+    </div>      
+</div>
+<div  class="row" style=" padding-bottom: 4vh;">
+    <div  class="card column" style="border: none;">       
+        <p >Национален  конкурс „Мадарски конник - Символ на историческото минало и европейското бъдеще на България“-  II място Юлиан Киров 10з клас.</p>
+      <img class="shadow-lg" style="width: 100%; height: auto; " src="images/z11.jpg"  >  
+    </div> 
+    <div class="card" style="border: none;">
+     <img class="vert" src="images/z10.jpg"   >            
+    </div>    
+</div>
+<div  class="row" style="width: 80%;" >
+  <div class="card " >
+   <img  src="images/z13.jpg"   >            
+  </div>  
+  <div class="card" style="border: none;" > <div class="card-text">
+    <h4 >2024 г.</h4><p >Николай Колев 9 б клас - Първо място на  VIII Национална ученическа конференция  „Пространство и време“- ВТУ
+      </p> </div>  </div>    
+</div>
+<a href="#nauki" class="previous " onclick="hide()"><img src="images/arrow-left-chrome.gif" ></a>
+<a href="#on" class="next " ><img src="images/arrow-up-chrome.gif"  ></a>
+</section>
+
+<section class="container-fluid" id="pn">     
+  <div class="card-text" style="width: 90%; margin: auto;">
+    <h4  >27.06.2024г.</h4>
+    <h4>Проектът на ПГМЕЕ „БИОЛОГИЯ НА СПОРТА“ Е СРЕД НОМИНИРАНИТЕ В XVI-то ИЗДАНИЕ НА НАЦИОНАЛНИЯ УЧЕНИЧЕСКИ КОНКУРС „ПОСЛАНИЦИ НА ЗДРАВЕТО“.</h4>
+  </div>
+  <div class="row" >
+    <p class="cards shadow-lg" >Националният ученически конкурс „Посланици на здравето“ се провежда в подкрепа на здравословния начин на живот на младите хора. Целта му е превенция на поведенчески и рискови за здравето фактори, свързани с нездравословното хранене, ниската физическа активност, употребата на алкохол и тютюнопушенето.</p>
+    <div class="card shadow-lg"  >
+      <img   src="images/pn1_1.jpg" >  </div>     
+  </div>
+   
+   <div class="card-text" style="width: 100%; height: auto;">
+    <h4  >27.05.2024г.</h4>
+    <h4> I-во и II-ро място на Фотоконкурс „Рибари“</h4>
+  </div>
+    <div class="row" > 
+      <div class="card shadow-lg"  ><img  src="images/pn1_2.jpg" ></div>
+    <p class="cards shadow-lg">В рамките на програмата „Черноморски хоризонти“ по повод Европейския ден на морето, бе организиран фотоконкурс „Рибари“. Учениците на Механото участваха активно, като изпратиха свои фотографии и се класираха във конкурса:<br>
+      ⎯	I-во място - Стилиян Кралев – 9-а клас, ПГМЕЕ-Бургас, за фотографията „Петима рибари...“<br>
+      ⎯	II-ро място – Яни Бързев – 9-е клас, ПГМЕЕ-Бургас, за фотографията „В очакване на улова!“<br>
+      ⎯	С грамота за участие беше отличен и Цоньо Цонев – 9-е клас, ПГМЕЕ-Бургас, за фотографията „Мерметосване“. Момчетата бяха наградени и с великолепни, луксозни издания на книги на морска тематика и други предметни награди.<br>
+      </p>
+  </div>
+   </div>
+   <div class="row" ><div class="card" style="border: none;">
+      <img class="vert shadow-lg" src="images/pn1_3.jpg" ></div>
+   <div class="card-text column" >
+    <h4  >02.04.2024г.</h4>
+    <h4>ПГМЕЕ СЕ ПРИСЪЕДИНЯВА КЪМ ЕЛИТА НА ЕВРОПЕЙСКИТЕ СИНИ УЧИЛИЩА </h4>
+    <p >Чрез тази общност, ПГМЕЕ има достъп до ресурси и дейности от потенциални партньори в платформата EU4Ocean. Приемането на Механото за пълноправен член на тази общност е признание за проекта „Старите рибари разказват…“. В общността има над 400 образователни институции от цяла Европа. Мрежата от европейски сини училища е инициатива на Европейската комисия, подкрепена от DG MARE и е разработена от партньорите на коалицията EU4Ocean. В нея членуват училища, които разработват проекти, свързани с моретата и океаните на Европа.</p>
+  </div>
+   </div>
+   <div class="card-text" style="width: 90%;margin: auto;">
+    <h4  >20.03.2024г.</h4>
+    <h4>„ДА МИСЛИМ ЕКОЛОГИЧНО ЗА БЪДЕЩЕТО“ – VIII НАЦИОНАЛНА КОНФЕРЕНЦИЯ ЗА УЧЕНИЦИ И СТУДЕНТИ </h4>
+    <p >Учениците Димитър Петров и Божидар Славов от 8. клас подготвиха тематични презентации, които споделиха пред участниците в конференцията, и разкриха с интересен и научно обоснован подход своите знания в областта на екологията. Специалната награда на РИОСВ – гр. Бургас спечели Димитър Петров с научната тема: „Гроздето – храна и лекарство“ а единственият награден учител бе госпожа Димитрина Кръстева – ръководител на двамата ученици. Тази награда е признание за усилията и отношението на учениците към научната сфера, както и за значимостта на екологичните въпроси, които ги вълнуват. </p></div>
+    <div class="row" >
+      <div class="cards" >
+      <img  src="images/pn2_1.jpg" style="width: 100%;" ></div>
+    <div class="card" style="border: none;" >
+      <img class="vert shadow-lg" src="images/pn2_2.jpg" ></div>
+  </div>
+   
+   <div class="card-text" style="width: 90%; margin: auto;">
+    <h4  >28.11.2022г.</h4>
+    <h4>XIV-то издание на Националния ученически конкурс „Посланици на здравето” </h4>
+    <p  >По идея и с активната работа на г-жа Катя Николова – учител по БЗО в нашето училище, Механото изпрати проектно предложение за участие в конкурса. Името на нашия проект бе „Справяме се заедно“.  Участници бяха всичките 198 ученици от 8 клас випуск 2021/2022г. На 28 ноември 2022г. бяха обявени резултатите от конкурса - общият брой проекти, които успяха да финализират успешно бяха 27. Нашият проект бе класиран на трето място в трета възрастова група (от 8-ми до 12-ти клас) и получи грамота за „забележително и оригинално изпълнение“. Освен грамоти, премираните училища и екипи получиха и предметни награди, изпратени до директорите на техните училища. Нашите награди бяха къщичка – хранилка за пойни птици и дигитален микроскоп. </p></div>
+    <div class="row" style="justify-content: center;">
+      <div class="card " style="border: none;"> 
+        <img class="vert shadow-lg" src="images/pn2_4.jpg" style="width: 77%;"></div>
+      <div class="card" style="border: none;">
+      <img class="vert shadow-lg" src="images/pn2_3.jpg"  style="width: 65%;"></div>
+    </div>
+
+   <div  class="card-text" style="width: 90%; margin: auto;">
+    <h4  >25.06.2019г.</h4>
+    <h4>Трето място за ПГМЕЕ в Националния ученически конкурс  “Посланици на здравето” 2018/2019 за забележителното и оригинално изпълнение на проекта “Кауза – живот без зависимости”  </h4>
+    <p >Наградата беше връчена лично от Кирил Ананиев – Министър на здравеопазването, на Ивайло Марио Костов и Димитър Иванов – представители на учениците от VIII класове, реализирали проекта с подкрепата на класните ръководители Д.Живкова, Н.Николова, Д.Митев, Р.Славова, Св.Люцканов, Б.Кафалова, Т.Стайкова и  Даниела Русева – учител по биология, М.Водев, М.Иванова – учители по ФВС.</p></div>
+    <div class="row" >
+      <div class="card " style="border: none;"> 
+      <img class="vert shadow-lg" src="images/pn2_5.jpg" ></div>
+      <div class="card " style="border: none;"> 
+      <img class="vert shadow-lg" src="images/pn2_6.jpg" ></div>
+  
+  </div>
+  
+   <div class="card-text" style="width: 90%; margin: auto;">
+    <h4  >05.05.2019г.</h4>
+    <h4>УЧЕНИЦИ ОТ КЛУБ „ЕЛЕКТРОННА ВСЕЛЕНА” ПОБЕДИТЕЛИ В РЕГИОНАЛЕН КОНКУРС „Водата и Земята“</h4></div>
+    <div class="row" > 
+    <p class="cards shadow-lg">Йордан Бахчеванов и Кристиян Георгиев от 9Ж клас, спечелиха Първо място във II-ри РЕГИОНАЛЕН КОНКУРС „Водата и Земята“. Младежите са членове на клуб „Електронна вселена” с ръководител инж. Диана Илиева. Те участваха в 4-та възрастова група (от VIII – XII клас), раздел Приложно творчество с електронни светещи творби със сензори за движение. На 22.04.2019 год. получиха заслужено Първо място с медали и грамоти за упорита си работа. Светещите картини очароваха всички присъстващи в залата за награждаване!</p>
+    <div class="card shadow-lg">
+    <img class="shadow-lg"  src="images/pn2_7.jpg" ></div>
+  </div>
+   
+   <div class="card-text" style="width: 100%; ">
+    <h4  >04.05.2018г.</h4>
+    <div class="row" > 
+      <div class="card shadow-lg"><img  src="images/pn3_1.jpg" ></div> 
+    <p class="cards">Участието на Даниела Русева /учител по Биология и здравно образование/ в Европейския конкурс за добри практики в областта на образованието, за екологично и устойчиво развитие – на тема “Нашата класна стая за един устойчив свят” /по проект Save World/ донесе на ПГМЕЕ грамота и купа, които бяха връчени на госпожа Желева.!</p>
+  </div>
+   </div>
+   <div class="card-text" style="width: 100%; ">
+    <h4  >01.05.2018г.</h4>
+    <div class="row" >
+      <div class="card shadow-lg">
+      <img class="shadow-lg" src="images/pn3_2.jpg"></div>
+    <p class="cards">Във връзка с 22 Април – “Деня на Земята” в оспорван регионален конкурс “Земята е за нас и ние сме за Земята”, организиран от РИОСВ Бургас, в които взеха участие деца и ученици до 12 клас от цялата страна с общо 350 творби, журито определи голямата награда – екскурзия и 1-во място в раздел “Мултимедия” на Никола Попов, Мартин Генчев и Иво Христов от 9з клас на ПГМЕЕ – Бургас с ръководител Даниела Русева. </p>
+  </div>
+   </div >
+  <div class="card-text" style="width: 90%; margin: auto;">
+    <h3>2010г.- Мартин Куванджиев – II-ро място на Национално състезание по физика</h3>
+    <h3>2009г.- Веселин Павлов и Рали Кеханов с ръководител инж. Тодорка Стайкова – награда за проект на тема „Физика на полупроводниците и опазване на околната среда“ на участие в VIII-мо Национално състезание по природни науки и екология в Ямбол.</h3>
+    <h4>2008г.</h4>
+    <h3>Мартин Куванджиев – II-ро място на Национално състезание по физика в Стара Загора<br>Петър Петров – Златен медал на Международна олимпиада по физика във Виетнам<br>Стамат Фъртунов – I-во място на VII-мо Национално състезание по природни науки и екология в Силистра.
+    </h3>
+    <h4>2007г.</h4>
+    <h3>Анна Йорданова - II-ро място на Национален конкурс за рисунка на тема „Водата – извор на живот“<br>Петър Петров – I-во място на Национален турнир на младите физици<br>Петър Петров – Сребърен медал на Международна олимпиада по физика в Иран
+    </h3>
+    <img src="images/pP.jpg" alt="" width="80%">
+    <h3>2006г.- Петър Петров – I-во място на Национално състезание по физика</h3>
+    <h3>2005г.- Петър Петров – III-то място на Национално състезание по физика</h3>
+    <h3>2004г.- Петър Петров – II-ро място на Национално състезание по физика</h3>
+    <h3>2000г.- Мавроди Карамихалев – III-то място на Национално състезание по физика</h3>
+    <h3>1999г.- Мавроди Карамихалев – I-во място на Национално състезание по физика</h3>
+  </div>
+
+  <a href="#nauki" class="previous " onclick="hide()"><img src="images/arrow-left-chrome.gif" ></a>
+  <a href="#pn" class="next " ><img src="images/arrow-up-chrome.gif"  ></a>
+</section>
+<footer></footer>
+<script>
+    let index
+    function show(index){
+      if(index==1){
+      document.getElementById('on').style.display = 'block'; 
+      document.getElementById('nauki').style.display = 'none'; 
+    }
+    if(index==2){
+      document.getElementById('pn').style.display = 'block';
+      document.getElementById('nauki').style.display = 'none';  
+    }
+  }
+function hide(){
+      document.getElementById('on').style.display = 'none';  
+      document.getElementById('pn').style.display = 'none';    
+      document.getElementById('nauki').style.display = 'block'; 
+  }
+</script>
+</body>
+</html>

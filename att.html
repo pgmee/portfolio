@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="icon" href="images/LOGO_PGMEE_1_nov.png">
+<link rel="stylesheet" href="buttons.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <title>ПОРТФОЛИО НА ПГМЕЕ - Бургас</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+body{
+  background-image: url('images/cars2.jfif');
+    background-position:center;  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+}
+.card{
+width: 88%;
+margin: auto;
+background-color: #005e92;
+color: white;
+margin-top: 3vh;
+padding: 1vh 2vw;
+}
+.row{
+   justify-content: space-between; 
+   flex-wrap: nowrap;
+    align-items: center;
+}
+.s{
+ width: 35%;
+}
+div.card h1{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+img{
+    transition: transform 2s;
+}
+img:hover{
+    transform: scale(1.1)
+}
+.big{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-title{
+  width:45%;
+}
+.imp{
+  height: 40vh;
+  width: auto;
+}
+a.previous img, a.next img {
+  width: 90%; 
+  max-width: 20vw; }
+  @media (max-width: 768px) {
+    a.previous img {
+      position: fixed;
+        bottom:5vh;
+        right:7vw; 
+        width:9vw;
+        height: 6vh;
+    } 
+    a.next img {
+    position: fixed;
+        bottom:12vh;
+        right: 1vw; 
+        width: 6vw;
+        height: 7vh;
+  }
+  h1{
+    font-size: 3.5vw;
+    text-align: center;
+}
+p{
+    font-size:2.5vw;
+}
+.card, .big, .row{
+  flex-direction: column;
+}
+.card-title{
+  width: 90%;
+}
+.s{
+  width: 90%;
+}
+.imp{
+   width: 80%;
+   height: auto;
+   margin: 1vh auto;
+}
+}
+@media (max-width: 480px) {
+  
+  a.previous img {
+    position: fixed;
+        bottom:5vh;
+        right:9vw; 
+        width:9vw;
+        height: 6vh;
+    }
+    a.next img {
+    position: fixed;
+        bottom:12vh;
+        right: 4vw; 
+        width: 7vw;
+        height: 6vh;
+    }
+    .card-title{
+  font-size:3vw;
+}
+   p{
+  font-size:3.5vw;
+}
+}
+    </style>
+</head>
+<body >
+     <header>
+    <img src="images/LOGO_PGMEE_1_nov.png" alt="Лого" class="header-logo">
+      <div>
+      <h2  style="font-size:1.8rem;"> ПРОФЕСИОНАЛНА ГИМНАЗИЯ ПО МЕХАНОЕЛЕКТРОТЕХНИКА И ЕЛЕКТРОНИКА – Бургас
+      </h2>
+      <h1 style="font-size:3.5rem; margin-top: 2vh;">П О Р Т Ф О Л И О</h1>
+    </div>
+  </header>
+  <!-- Навигационно меню -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" title="Начало">
+  <i class="bi bi-house-door-fill fs-4"></i>
+</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+    <li class="nav-item"><a class="nav-link" href="vision.html">Визия и мисия</a></li>
+          <!-- Меню с подменю -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button">
+            История
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="direktori.html">Директори</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="rabotilnici.html">История на работилниците</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="biblioteka.html">История на библиотеката</a></li><hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="pastpresent.html">Миналото днес</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="symbols.html">Символи</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="filmi.html">Филми</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="vestnici.html">Вестници</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="almanah.html">Юбилеен алманах</a></li>
+            </ul>
+          </li>
+            <!-- Меню с подменю -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button">
+            Покорени върхове
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="profesional.html">Професионална подготовка</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="math.html">Математика и ИТ</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="nauki.html">Обществени и природни науки</a></li><hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="bel.html">Литература</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="languages.html">Езици</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="fvs.html">Спорт</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="teachers.html">Почетни награди и отличия на учители</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="inovations.html">Иновативно училище</a></li>
+          <li class="nav-item"><a class="nav-link" href="proekti.html">Проекти</a></li>
+          <li class="nav-item"><a class="nav-link" href="kvalifikacii.html">Квалификации</a></li>
+           <li class="nav-item"><a class="nav-link" href="traditions.html">Традиции</a></li>
+            <li class="nav-item"><a class="nav-link" href="team.html">Училищен екип</a></li>
+            <li class="nav-item"><a class="nav-link" href="vr.html">Виртуална разходка</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="container-fluid mt-2">
+    <div class="card">
+        <h1>Международният кръг на НС „Най-добър млад автомонтьор и водач на МПС“ се проведе в Литва от 17 до 21 юни 2024г.</h1>
+        <div class="row" >
+        <div class="card-title " >
+        <p>В него взеха участие Професионални училища от 8 държави - Полша, Латвия, Естония, Гърция, Словакия, Хърватска, Румъния и Литва. Любослав Райков от12д клас достигна с уменията си до 8-мо място, като получи равен брой точки с класиралите се на 5-то, 6-то и 7-мо място, наравно с участниците от Естония, Унгария и Словакия. Освен това получи Първо отличие и награда от "Континентал" за най-добра смяна на ангренажен ремък на Фолксваген и Първа награда – най-добро майсторско изпълнение за смяна на масло на автоматична скоростна кутия на Мерцедес. Гордеем се с постигнатите резултати!
+          </p></div>
+        <img class="imp" src="images/Litva1.jpg" alt="">
+        <img class="imp" src="images/Litva2.jpg" alt="">
+      </div></div>
+    <div class="card ">
+        <h1>От 28.04 до 30.04.2024 г. се проведе националния кръг на НС „Най-добър млад автомонтьор и водач на МПС“ в гр. Русе. </h1>
+        <p>Отборът на ПГМЕЕ отново се представи отлично, като се класира на: <br>
+            Първо място – Комплексно отборно „Най-добър млад автомонтьор и водач на МПС“<br>
+            Първо място – Отборно „Най-добър автомонтьор“<br>  
+            Първо място – Индивидуално „Най-добър автомонтьор“ – Любослав Райков<br>
+            Второ място – Индивидуално „Най-добър автомонтьор“ – Калоян Йорданов<br>
+            Трето място – Отборно „Най-добър водач на МПС“ <br>
+            Тези отлични резултати бяха постигнати благодарение на перфектната и всеотдайна работа на целия екип: инж. Емил Ковачев, инж. Стефка Велкова, инж. Станимир Велинов, Пламен Петров и Алберт Калдерон. С големи благодарности към отбора на „Механото“ Любослав Райков, Калоян Йорданов, Ерхан Ибрям и техния ръководител инж. Емил Ковачев.<br> Любослав завоюва и правото да представи България на Международния кръг на Националното състезание „Най-добър млад автомонтьор и водач на МПС“ в Литва.
+          </p>
+       <div class="row">
+      <img class="imp" src="images/Снимка23.jpg" alt="">
+      <img class="imp" src="images/Снимка24.jpg" alt="">
+      <img class="imp" src="images/Снимка25.jpg" alt="">
+      </div>
+      </div>
+    <div class="card ">
+        <h1>Безапелационна победа за отбора на ПГМЕЕ на Регионалният кръг на НС “Най-добър млад автомонтьор и водач на МПС”.</h1>
+        <p>В периода 14-15 март 2024 година, град Хасково се превърна в сцена на ученически двубой на знания и умения в областта на автотранспортната техника. <br>Дванадесетокласниците на ПГМЕЕ Любослав Райков, Калоян Йорданов и Ерхан Ибрям доказаха, че са заслужили мястото си на върха, като спечелиха две отборни първи места - в категориите „Най-добър млад автомонтьор“ и „Най-добър млад водач на МПС“. Отборът бе подготвен от инж. Стефка Велкова, инж.Станимир Велинов, Алберт Калдерон, инж.Емил Ковачев и инж.Пламен Петров.
+          </p>
+       <div class="row">
+      <img class="imp" src="images/Снимка18.png" alt="">
+      <img class="imp" src="images/Снимка19.jpg" alt="">
+      <img class="imp" src="images/Снимка19_1.jpg" alt="">
+      </div>
+      </div>
+    <div class="card big">
+        <div class="card-title">
+      <p>От 27.04. до 29.04.2023 г. ПГМЕЕ беше домакин на националният кръг на НС „Най-добър млад автомонтьор и водач на МПС“. </p>
+      <p>ПГМЕЕ бе представен от: Янислав Христов Михайлов 11д клас, Константин Янчев Илиев 12г клас и Атанас Георгиев Брадев 12д клас. Отборът бе подготвен от инж. Стефка Велкова, инж.Станимир Велинов, Алберт Калдерон, инж.Станимир Христов и Пламен Петров.<br>
+    Отборът на ПГМЕЕ се класира съответно – 1-во място отборно водач на МПС, 3-то място отборно монтьор и 1-во място индивидуално водач на МПС.
+        </p></div>
+      <img class="imp" src="images/Снимка17.jpg" alt="">
+      <img class="imp" src="images/Снимка17_1.png" alt="">
+       
+    </div>
+    <div class="card big" >
+        <img class="card-title" src="images/Снимка15.jpg" alt="">
+        <div class="card-title">
+        <p>На 25 и 26.03. 2022 г. се проведе регионалния кръг на състезание „Най-добър млад автомонтьор и водач на МПС“ в гр.Габрово. Отборът на ПГМЕЕ в състав: Николай Мариянов Димов от 12 г клас, Кристиян Пламенов Терзиев от 12 г клас и Звездомир Руменов Стоянов от 11 г клас  в комплексното отборно класиране и отборно класиране за най-добър монтьор зае второ място. Кристиян Пламенов Терзиев се класира на трето място в индивидуалното класиране за най-добър монтьор. Отборът бе подготвен от инж. Стефка Велкова, инж.Станимир Велинов, Алберт Калдерон, инж.Станимир Христов и Пламен Петров.</p>
+      </div>
+      </div>
+    <div class="card ">
+        <p>Регионалният кръг на състезанието „Най-добър млад автомонтьор и водач на моторно превозно средство“ 2021г. се проведе в гр.Силистра. На комплексното отборно класиране и отборно класиране за най-добър монтьор Иляз Виждан Шукри и Емил Дончев Георгиев заеха второ място. Емил Дончев Георгиев се класира на трето място в индивидуалното класиране за най-добър монтьор, а Златомир Радомиров Стойков  1-во място отборно за водач на МПС. Ръководители на отбора- инж.Стефка Велкова, инж. Иван Манов, Алберт Калдерон, инж.Станимир Христов, инж.Пламен Петров, инж.Станимир Велинов.</p>
+    </div>
+    <div class="card big" >
+        <img class="card-title" src="images/Снимка8.jpg" alt="">
+        <div class="card-title" >
+        <p>В състезанието „Най-добър млад водач на МПС“, което се проведе на 8 май 2019г. се включи отбора от четирима ученици от ПГМЕЕ.Участие в демонстрацията взе и футуристичният „Batkomobil“ на отбор„Mehano“ от ПГМЕЕ, който преди няколко месеца премина успешно предварителния кръг на състезанието с коли на бъдещето на Shell Eco-marathon. Състезателите от ПГМЕЕ  получиха напълно заслужено купи и грамоти за участие в първата по рода си демонстрация по майсторско управление на автомобил. </p>
+      </div>
+      </div>
+    <div class="card ">
+        <h1>Регионално състезание “Най-добър млад автомонтьор и водач на МПС” град ГАБРОВО, 23-24 март 2018 година</h1>
+        <div class="row"  >
+        <p class="card-title">Отборът на Професионална гимназия по механоелектротехника и електроника – гр.Бургас в състав: Васил Николов Ангелов, Алириза Сами Осман, Велин Донков Иванов и Златко Красимиров Харбалиев
+            се представи достойно в състезанието като отново ни зарадва с призови места:<br>
+            1.	Златко Красимиров Харбалиев – ПГМЕЕ – гр. Бургас-второ място в Индивидуално класиране за „Най-добър млад водач на МПС“
+            <br>2.	Велин Донков Иванов – ПГМЕЕ – гр. Бургас-трето място в Индивидуално класиране за „Най-добър млад автомонтьор“
+            <br>3.	Отборно класиране за „Най-добър млад автомонтьор“-трето място
+            <br>4.	Отборно класиране за „Най-добър млад водач на МПС“-второ място
+            <br>5.	Отборно комплексно класиране за „Най-добър автомонтьор и водач на МПС“-трето място.<br>
+            Ръководители на отбора- инж.Стефка Велкова, инж.Иван Манов, Алберт Калдерон. </p>
+            <img class="card-title" src="images/Снимка6.jpg" alt=""></div>
+       <div class="row">
+      <img class="card-title" src="images/Снимка4.png" alt="">
+      <img class="card-title" src="images/Снимка3.png" alt="">
+      </div>
+      </div>   
+<div class="card big">
+  <div class=" s">
+  <p>На 17 и 18 март 2017г. в гр.Казанлък се проведе регионално състезание “Най-добър млад автомонтьор и водач на МПС”. Учениците на ПГМЕЕ – гр.Бургас взеха две трети места:<br>
+    Живко Нейчев от 12г клас – трето място за най-добър монтьор в индивидуалното състезание,<br>
+    Слави Тодоров от 12г клас – трето място за най-добър водач на МПС.
+    </p>
+</div>
+<img class="imp" src="images/Снимка1.png" alt="">
+<img class="imp" src="images/Снимка2.png" alt="">
+</div>
+<div class="card big" style="margin-bottom: 3vh;">
+    <div class="card-title">
+    <p>На 25 и 26 март 2016г. се проведе състезанието „Най-добър млад автомонтьор и водач на МПС”. На първо място в направление „Най-добър млад водач на МПС” се класира отборът на ПГМЕЕ – Бургас. В индивидулното класиране в тази дисциплина триумфира нашия ученик Живко Великов а в  направление „Най-добър автомонтьор“ ПГМЕЕ  зае трето място.  В отборното комплексно класиране на състезанието „Най-добър млад автомонтьор и водач на МПС” ПГМЕЕ  зае второ място.
+      </p>
+  </div>
+  <img class="imp" src="images/Снимка01.jpg" alt="">
+  <img class="imp" src="images/Снимка02.jpg" alt="">
+  </div>
+</main>
+    <a href="#" class="next " ><img src="images/arrow-up-chrome.gif"  ></a>
+        <a href="profesional.html" class="previous "><img src="images/arrow-left-chrome.gif" ></a>
+        
+<footer></footer>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/LOGO_PGMEE_1_nov.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<!-- Bootstrap Icons (необходим за иконки) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <title>ПОРТФОЛИО НА ПГМЕЕ - Бургас</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="buttons.css">
+    <style>
+ .big{
+    display: flex;
+    flex-direction: row;
+    background-color: #005e92;
+    color: white;
+    margin: 2vh auto;
+    padding: 2vh 1vw;
+    border-radius: 5%;
+}
+.big h2{
+    color: whitesmoke;
+}
+.col{
+    width: 45%;
+    height: auto;
+    display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2vh 4vw;
+  }
+.title{
+  width: 100%;
+  font-size: 1.7vw;
+  text-align: justify;
+  margin: auto;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center;
+    width: 100%;
+    margin: auto;
+  }
+   .card-img-top{
+          padding: 2vh 1vw;
+          transition:  transform 1s;   
+          border-radius: 7%;
+          width: 50%;
+          height: auto;
+        }
+        .rg{
+  width: 30%;
+}
+    </style>
+</head>
+<body>
+  
+   <header>
+    <img src="images/LOGO_PGMEE_1_nov.png" alt="Лого" class="header-logo">
+      <div>
+      <h2  style="font-size:1.8rem;"> ПРОФЕСИОНАЛНА ГИМНАЗИЯ ПО МЕХАНОЕЛЕКТРОТЕХНИКА И ЕЛЕКТРОНИКА – Бургас
+      </h2>
+      <h1 style="font-size:3.5rem; margin-top: 2vh;">П О Р Т Ф О Л И О</h1>
+    </div>
+  </header>
+  <!-- Навигационно меню -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" title="Начало">
+  <i class="bi bi-house-door-fill fs-4"></i>
+</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+    <li class="nav-item"><a class="nav-link" href="vision.html">Визия и мисия</a></li>
+          <!-- Меню с подменю -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button">
+            История
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="direktori.html">Директори</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="rabotilnici.html">История на работилниците</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="biblioteka.html">История на библиотеката</a></li><hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="pastpresent.html">Миналото днес</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="symbols.html">Символи</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="filmi.html">Филми</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="vestnici.html">Вестници</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="almanah.html">Юбилеен алманах</a></li>
+            </ul>
+          </li>
+            <!-- Меню с подменю -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button">
+            Покорени върхове
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="profesional.html">Професионална подготовка</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="math.html">Математика и ИТ</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="nauki.html">Обществени и природни науки</a></li><hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="bel.html">Литература</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="languages.html">Езици</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="fvs.html">Спорт</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="teachers.html">Почетни награди и отличия на учители</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="inovations.html">Иновативно училище</a></li>
+          <li class="nav-item"><a class="nav-link" href="proekti.html">Проекти</a></li>
+          <li class="nav-item"><a class="nav-link" href="kvalifikacii.html">Квалификации</a></li>
+           <li class="nav-item"><a class="nav-link" href="traditions.html">Традиции</a></li>
+            <li class="nav-item"><a class="nav-link" href="team.html">Училищен екип</a></li>
+            <li class="nav-item"><a class="nav-link" href="vr.html">Виртуална разходка</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Основна част -->
+  <main class="container-fluid mt-2">
+    <h2 style=" padding-top: 2vh;">ПОЧЕТНИ НАГРАДИ И ОТЛИЧИЯ НА УЧИТЕЛИ</h2> 
+    <div class=" big " style="width: 80%;">          
+      <div class="col" >    
+      <h2 >2024г.</h2>
+      <h4  class="title" >Номинирана единодушно от целия колектив на ПГМЕЕ, инж. Елена Томицина получи Наградата на МОН- “Неофит Рилски” за доказан висок професионализъм и всеотдайност в педагогическата дейност и за постигнати значими резултати в процеса на обучението.</h4>
+    </div> 
+      <img src="images/nrET.jpg" class="card-img-top shadow-lg "  >
+     </div>
+  
+    <div class=" big col" style="width: 90%;">   
+      <h2  >2021г.</h2>
+      <h4  class="title" style="width: 90%;" >ПГМЕЕ  получава ГРАМОТА ЗА ИЗКЛЮЧИТЕЛНИ ЗАСЛУГИ и постигнати високи резултати  в областта на международните и национални научни и просветни проекти.</h4>    
+      <div class="row " > 
+        <img src="images/грамота 1.JPG" class="card-img-top shadow-lg " style="width: 45%;" >
+        <img src="images/грамота2.JPG" class="card-img-top shadow-lg " style="width: 53%;"  >
+     </div>
+    </div>
+    <div class=" big " style="width: 90%;">          
+        <div class="col" >
+        <h2  style="margin-bottom: 3vh;">2020г.</h2>
+        <h4  class="title" >През 2019/20 учебна година по повод  най-българския празник – 24 май,  ПГМЕЕ отново има свой лауреат на почетното отличие на МОН – “Неофит Рилски” – Румяна Георгиева, зам.-директор УД. То е връчено за дългогодишна, цялостна високопрофесионална трудова дейност в системата на предучилищното и училищното образование.</h4></div>
+        <img src="images/nrRG.jpg" class="card-img-top shadow-lg rg"  > 
+        <img src="images/nrRG1.jpg" class="card-img-top shadow-lg rg"  >
+    </div>  
+    <div class=" big " style="width: 80%;">          
+      <img src="images/RZh1.jpg" class="card-img-top shadow-lg "  > 
+      <div class="col" >    
+      <h2 > 2019г.</h2>  
+      <h4  class="title"  >В навечерието на 24 май на ежегодния тържествен прием за дейците на образованието в града, директорът на ПГМЕЕ инж. Роза Желева получи почетна грамота за проявен висок професионализъм при подготовката и излъчването на ученици – участници в национални кръгове на олимпиади и състезания. </h4><h4 class="title">Инж. Роза Желева получава и специалната награда на председателя на СБУ в ежегодния конкурс „УЧИТЕЛ НА ГОДИНАТА“.</h4></div>
+    </div> 
+    <div class=" big " style="width: 90%;">          
+        <div class="col" >
+          <h2 >2019г.</h2>
+          <h4  class="title">На приема за 24 май г-жа Виолета Илиева – началник на РУО Бургас, връчва почетното отличие на МОН – “Неофит Рилски” за цялостна дейност на г-жа Даниела Русева, учител по биология в нашето училище. </h4></div>
+      <img src="images/nrDR1.jpg" class="card-img-top shadow-lg rg " > 
+      <img src="images/nrDR2.jpg" class="card-img-top shadow-lg rg"  >
+  </div>  
+  <div class=" big col" style="width: 90%;">          
+    <h2 >2018г.</h2>
+    <h2 > ПЛАКЕТ И ГРАМОТА ЗА ПГМЕЕ ОТ КМЕТА НА ГРАД БУРГАС - ДИМИТЪР НИКОЛОВ ЗА ВЪВЕЖДАНЕ НА ИНОВАЦИИ В ОБРАЗОВАТЕЛНИЯ ПРОЦЕС</h2>
+    <div class="row " > 
+    <img src="images/gramotaPGMEE2.JPG" class="card-img-top shadow-lg rg "  >
+    <img src="images/gramotaPGMEE1.jpg" class="card-img-top shadow-lg rg"  > 
+    <img src="images/plaket.JPG" class="card-img-top shadow-lg rg"  >
+   </div>
+    </div> 
+  <div class=" big " style="width: 70%;">          
+      <div class="col" >    
+      <h2 style="margin-bottom: 3vh;">2016г.</h2>
+      <h4  class="title" >На 11.05.2016 г. г-жа Пепа Марчева – учител по български език и литература в ПГМЕЕ е удостоена с почетното отличие ”Неофит Рилски” в хуманитарно направление. То и е връчено за цялостната и професионална трудова дейност в системата на народната просвета!</h4></div>
+      <img src="images/nrPM.jpg" class="card-img-top shadow-lg "  >
+     
+  </div>   
+  <div class=" big " style="width: 90%;"> 
+    <div class="col">
+    <h2 > 2015г. - ИНЖ. РОЗА ЖЕЛЕВА - НОСИТЕЛ НА НАГРАДАТА  "ДИРЕКТОР НА ГОДИНАТА" </h2>      
+    <h4  class="title"  >Инж. Роза Желева бе удостоена с наградата „Директор на годината“ от Съюза на работодателите в системата на народната просвета в България по повод Деня на народните будители. Тържествената церемония се състоя на 2 ноември 2015 г. в гр. Пловдив. Престижната награда на директора на ПГМЕЕ-Бургас е за постигнатите образователни резултати на училището на национално ниво и в област Бургас, за екипната работа, и за успешното партньорство с родители, училищното настоятелство и фондации.</h4>
+  </div>
+  <img src="images/Директор1.jpg" class="card-img-top shadow-lg " >
+  </div> 
+  <div class=" big " style="width: 60%; margin-bottom: -2vh ;">          
+    <div class="col">    
+    <h2 >2014г.</h2>
+    <h4  class="title" >На 09.05.2014г. инж. Веселина Кашукеева е удостоена с приз „Учител на годината“ в направление „Професионално образование”.</h4>
+  </div> 
+    <img src="images/nagradaVK.JPG" class="card-img-top shadow-lg "  >
+   </div>  
+  </main>
+  <a href="#" class="next " ><img src="images/arrow-up-chrome.gif"  ></a>
+<footer></footer>
+</body>
+</html>

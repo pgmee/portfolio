@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="icon" href="images/LOGO_PGMEE_1_nov.png">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <title>ПОРТФОЛИО НА ПГМЕЕ - Бургас</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="buttons.css">
+    <style>
+  main{
+        background-image: url(" ");
+        background-position:center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        width: 100%;    
+       }
+    .row {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+.card {
+  background-color: transparent;
+  border: none;
+  transition:  transform 2s;
+  margin:4vh auto;
+  width: 45%;
+  height: auto;
+}
+.s{
+  width: 30%; 
+  height: auto;
+}
+.card:hover{
+    transform: scale(1.1);   
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  height: 95vh;
+ /* overflow: auto;*/
+  
+}
+/* Modal Content */
+.modal-content {
+  /*  position: relative;*/
+  position: absolute;
+  background-color: #fefefe;
+  margin: auto;
+  padding:0px;
+  width: 100%;
+  height: auto;
+  max-width: 100vw;
+}
+/* The Close Button */
+.close {
+  color: black;
+  position: absolute;
+  top: 2vh;
+  right: 2vw;
+  font-size: 3vw;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+.mySlides {
+display: none;
+padding: 0px 8%;
+}
+.cursor {
+  cursor: pointer;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 2vw;
+  margin-top: -5vh;
+  color: black;
+  font-weight: bold;
+  font-size: 2vw;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.hover-shadow{
+  border-radius: 2%;
+}
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media (max-width: 768px) {
+  .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  height: 95vh;
+ /* overflow: auto;*/
+  
+}
+/* Modal Content */
+.modal-content {
+  /*  position: relative;*/
+  position: absolute;
+  background-color: #fefefe;
+  margin: auto;
+  padding:0px;
+  width: 100%;
+  height: auto;
+  max-width: 100vw;
+}
+.mySlides {
+display: none;
+padding: 0px ;
+}
+.close{
+  font-size: 7vw;
+}
+.prev,
+.next {
+  padding: 0px;
+  font-size: 5vw;
+  transition: 0.6s ease;
+  border-radius: 0 5px 5px 0; 
+}
+ a.previousbut img {
+    position: fixed;
+        bottom:5vh;
+        right:7vw; 
+        width:9vw;
+        height: 6vh;
+    } 
+    a.nextbut img {
+    position: fixed;
+        bottom:12vh;
+        right: 1vw; 
+        width: 6vw;
+        height: 6vh;
+    }
+    h1{
+      font-size: 5vw;
+    }
+    .card{
+      width: 85%;
+    }
+}
+@media (max-width: 480px) {
+  .close{
+  font-size: 9vw;
+}
+.prev,
+.next {
+  padding: 0px;
+  font-size: 7vw;
+  transition: 0.6s ease;
+  border-radius: 0 5px 5px 0; 
+}
+ a.previousbut img {
+          position: fixed;
+              bottom:5vh;
+              right:7vw; 
+              width:9vw;
+              height: 6vh;
+          }
+          
+    a.nextbut img {
+          position: fixed;
+              bottom:12vh;
+              right: 1vw; 
+              width: 7vw;
+              height: 6vh;
+        }
+        h1{
+      font-size: 7vw;
+    }
+}
+    </style>
+</head>
+<body >
+     <header>
+    <img src="images/LOGO_PGMEE_1_nov.png" alt="Лого" class="header-logo">
+      <div>
+      <h2  style="font-size:1.8rem;"> ПРОФЕСИОНАЛНА ГИМНАЗИЯ ПО МЕХАНОЕЛЕКТРОТЕХНИКА И ЕЛЕКТРОНИКА – Бургас
+      </h2>
+      <h1 style="font-size:3.5rem; margin-top: 2vh;">П О Р Т Ф О Л И О</h1>
+    </div>
+  </header>
+  <!-- Навигационно меню -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" title="Начало">
+  <i class="bi bi-house-door-fill fs-4"></i>
+</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+    <li class="nav-item"><a class="nav-link" href="vision.html">Визия и мисия</a></li>
+          <!-- Меню с подменю -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button">
+            История
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="direktori.html">Директори</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="rabotilnici.html">История на работилниците</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="biblioteka.html">История на библиотеката</a></li><hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="pastpresent.html">Миналото днес</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="symbols.html">Символи</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="filmi.html">Филми</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="vestnici.html">Вестници</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="almanah.html">Юбилеен алманах</a></li>
+            </ul>
+          </li>
+            <!-- Меню с подменю -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button">
+            Покорени върхове
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="profesional.html">Професионална подготовка</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="math.html">Математика и ИТ</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="nauki.html">Обществени и природни науки</a></li><hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="bel.html">Литература</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="languages.html">Езици</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="fvs.html">Спорт</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="teachers.html">Почетни награди и отличия на учители</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="inovations.html">Иновативно училище</a></li>
+          <li class="nav-item"><a class="nav-link" href="proekti.html">Проекти</a></li>
+          <li class="nav-item"><a class="nav-link" href="kvalifikacii.html">Квалификации</a></li>
+           <li class="nav-item"><a class="nav-link" href="traditions.html">Традиции</a></li>
+            <li class="nav-item"><a class="nav-link" href="team.html">Училищен екип</a></li>
+            <li class="nav-item"><a class="nav-link" href="vr.html">Виртуална разходка</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="container-fluid mt-2">
+    <h1>МИНАЛОТО ДНЕС</h1>
+ <div class="row ">
+    <div class="card">
+      <img src="pastpresent/1rabotilnici.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="card">
+      <img src="pastpresent/2shloserno.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+    <div class="card">
+      <img src="pastpresent/3strugarno.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+    <div class="card">
+        <img src="pastpresent/4strugarno.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    </div>
+    <div class="card">
+        <img src="pastpresent/5strigarno.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+    </div>
+    <div class="card">
+        <img src="pastpresent/6zav.jpg"  onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+    </div>
+    <div class="card">
+        <img src="pastpresent/7dvg.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+      </div>
+      <div class="card">
+        <img src="pastpresent/8cars.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+      </div>
+      <div class="card">
+        <img src="pastpresent/9el.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+      </div>
+      <div class="card">
+          <img src="pastpresent/10music.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+      </div>
+      <div class="card">
+          <img src="pastpresent/11plain.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+      </div>
+      <div class="card">
+          <img src="pastpresent/12plain.jpg"  onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+      </div>
+      <div class="card">
+        <img src="pastpresent/13fvs.jpg" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+    </div>
+    <div class="card">
+        <img src="pastpresent/14fvs.jpg"  onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+    </div>
+    <div class="card s" style=" padding-bottom: 1vh;">
+        <img src="pastpresent//15fvs2.jpg"  onclick="openModal();currentSlide(15)" class="hover-shadow cursor" style=" height: auto;">
+    </div>
+    <div class="card s" >
+      <img src="pastpresent/16sport.jpg" onclick="openModal();currentSlide(16)" class="hover-shadow cursor" style=" height: auto;">
+  </div>
+  <div class="card s" >
+      <img src="pastpresent/17koridor.jpg"  onclick="openModal();currentSlide(17)" class="hover-shadow cursor" style=" height: auto;">
+  </div>
+  </div>
+  
+  <a href="#" class="nextbut " ><img src="images/arrowW1.png" ></a>
+
+  <div id="myModal" class="modal">  
+    <div class="modal-content">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="mySlides">
+        <div class="numbertext">1 / 17</div>
+        <img src="pastpresent/1rabotilnici.jpg" class="hover-shadow cursor">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">2 / 17</div>
+        <img src="pastpresent/2shloserno.jpg" class="hover-shadow cursor">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">3 / 17</div>
+        <img src="pastpresent/3strugarno.jpg" class="hover-shadow cursor">
+      </div>  
+      <div class="mySlides">
+        <div class="numbertext">4 / 17</div>
+        <img src="pastpresent/4strugarno.jpg" class="hover-shadow cursor">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">5 / 17</div>
+        <img src="pastpresent/5strigarno.jpg" class="hover-shadow cursor">
+      </div> 
+      <div class="mySlides">
+        <div class="numbertext">6 / 17</div>
+        <img src="pastpresent/5strigarno.jpg" class="hover-shadow cursor">
+      </div> 
+      <div class="mySlides">
+        <div class="numbertext">7 / 17</div>
+        <img src="pastpresent/7dvg.jpg" class="hover-shadow cursor">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">8 / 17</div>
+        <img src="pastpresent/8cars.jpg" class="hover-shadow cursor">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">9 / 17</div>
+        <img src="pastpresent/9el.jpg" class="hover-shadow cursor">
+      </div>  
+      <div class="mySlides">
+        <div class="numbertext">10 / 17</div>
+        <img src="pastpresent/10music.jpg" class="hover-shadow cursor">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">11 / 17</div>
+        <img src="pastpresent/11plain.jpg" class="hover-shadow cursor">
+      </div> 
+      <div class="mySlides">
+        <div class="numbertext">12 / 17</div>
+        <img src="pastpresent/12plain.jpg" class="hover-shadow cursor">
+      </div> 
+      <div class="mySlides">
+        <div class="numbertext">13 / 17</div>
+        <img src="pastpresent/13fvs.jpg" class="hover-shadow cursor">
+      </div> 
+      <div class="mySlides">
+        <div class="numbertext">14 / 17</div>
+        <img src="pastpresent/14fvs.jpg" class="hover-shadow cursor">
+      </div> 
+      <div class="mySlides" style="padding: 0px 18%;">
+        <div class="numbertext">15 / 17</div>
+        <img src="pastpresent/15fvs2.jpg" class="hover-shadow cursor">
+      </div> 
+      <div class="mySlides" style="padding: 0px 17%;">
+        <div class="numbertext">16 / 17</div>
+        <img src="pastpresent/16sport.jpg" class="hover-shadow cursor" >
+      </div> 
+      <div class="mySlides" style="padding: 0px 19%;">
+        <div class="numbertext">17 / 17</div>
+        <img src="pastpresent/17koridor.jpg" class="hover-shadow cursor">
+      </div> 
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>  
+    </div>
+  </div>
+</main>
+ 
+<footer></footer>
+        <script>
+            function openModal() {
+              document.getElementById("myModal").style.display = "block";
+            }
+            
+            function closeModal() {
+              document.getElementById("myModal").style.display = "none";
+            }
+            
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              var captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+            </script>        
+</body>
+</html>

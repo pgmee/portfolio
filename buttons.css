@@ -1,0 +1,34 @@
+.previous {
+position: fixed;
+    bottom:6vh;
+    right:2.5vw; 
+    width:5vw;
+    height: 4vh;
+}
+
+.next {
+
+position: fixed;
+    bottom:12vh;
+    right: -0.5vw; 
+    width: 4vw;
+    height: 4vh;
+}
+.previousbut {
+    position: fixed;
+    bottom:4vh;
+    right:2vw; 
+    width:4vw;
+    height: 4vh;
+  }
+    .nextbut {
+    position: fixed;
+    bottom:12vh;
+    right: -0.5vw; 
+    width: 3vw;
+    height: 4vh;
+  }
+a.previousbut img, a.nextbut img {
+  width: 90%;
+  max-width: 20vw;  }
+

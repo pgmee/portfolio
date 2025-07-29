@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="icon" href="images/LOGO_PGMEE_1_nov.png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <title>ПОРТФОЛИО НА ПГМЕЕ - Бургас</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+ 
+section{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /*background-color: #f0f0f0;*/
+}
+.pics{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+  }
+.image-container {
+    width: 90%;
+    height: 90%;
+    position: relative;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+}
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Запазва пропорциите на изображението */
+    object-position: center; /* Центрира изображението в контейнера */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    border: 3px inset #FDE486;
+}
+  h4{
+    margin:1vh auto;
+    font-size: 1.4vw;
+    font-weight: 700;
+  }
+  .card{
+    width: 20vw;
+    height: 22vh;
+    max-height: auto;
+    padding: 0px;
+    transition:  transform 2s;
+    margin: 4vh 2vw;
+    background-image: url("images/projects2.jpg");
+    background-size: cover;
+    background-position:bottom;
+    border: none;
+  }
+  .card:hover{
+                transform: scale(1.1);    
+            }
+            .row{
+  flex-wrap: wrap;
+}
+.card-title{
+    text-align: center;
+    margin: auto 2vw;  
+    color: #013476;
+}
+.popup {
+    background-image: url("images/projects2.jpg");
+    background-position:bottom;
+    background-size:cover;
+display: none;
+position: fixed;
+width: 100%;
+height: 100%;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+/*border: 1px solid #ccc;
+padding: 7vh 1vw ;*/
+/*z-index: 1000;*/
+/* max-height: 100vh;  Ограничение за височината на прозореца */
+/*overflow: hidden;  Скриване на излизащото съдържание */
+color: #013476; /* Цвят на текста */
+    padding: 7px;
+    text-align: center; /* Центриране на заглавието */
+    
+}
+.popup-title {
+    font-size: 2vw;
+    margin-bottom: 11px;
+    
+}
+.close {
+position: absolute;
+top:10%;
+right: 3vw;
+background-color:#206eb0 ;
+color: white;
+cursor: pointer;
+text-align: center;
+border: 2px inset #013476;
+padding: 1vh 1vw;
+z-index: 2000;
+}
+
+@media (max-width: 768px) {
+    a.previous img {
+    position: fixed;
+        bottom:3vh;
+        right:3vw; 
+        width:9vw;
+        height: 7vh;     
+    }
+    h1{
+        font-size: 5vw;
+      }
+      .card-title{
+        font-size: 3vw;
+        padding-bottom: 3vh;
+      }
+      .card{
+        width: 45%;
+        max-height: 15vh;
+        margin: 2vh 2vw;
+      }
+      .popup-title {
+    font-size: 5vw;
+    margin-bottom: 10px;
+}
+}
+@media (max-width: 480px) {
+      a.previous img {
+        position: fixed;
+            bottom:5vh;
+            right:5vw; 
+            width:9vw;
+            height: 6vh;
+        }
+        a.next img {
+        position: fixed;
+            bottom:12vh;
+            right: 1vw; 
+            width: 7vw;
+            height: 6vh;
+        }
+        .card{
+          width: 80%;
+          margin: 1vh auto;
+        }
+        h1{
+          font-size: 7vw;
+          margin-bottom: 0px;
+        }
+        .card-title{
+        font-size: 5vw;
+      }
+  }
+</style>
+</head>
+<body>
+       <header>
+    <img src="images/LOGO_PGMEE_1_nov.png" alt="Лого" class="header-logo">
+      <div>
+      <h2  style="font-size:1.8rem;"> ПРОФЕСИОНАЛНА ГИМНАЗИЯ ПО МЕХАНОЕЛЕКТРОТЕХНИКА И ЕЛЕКТРОНИКА – Бургас
+      </h2>
+      <h1 style="font-size:3.5rem; margin-top: 2vh;">П О Р Т Ф О Л И О</h1>
+    </div>
+  </header>
+  <!-- Навигационно меню -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" title="Начало">
+  <i class="bi bi-house-door-fill fs-4"></i>
+</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+    <li class="nav-item"><a class="nav-link" href="vision.html">Визия и мисия</a></li>
+          <!-- Меню с подменю -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button">
+            История
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="direktori.html">Директори</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="rabotilnici.html">История на работилниците</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="biblioteka.html">История на библиотеката</a></li><hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="pastpresent.html">Миналото днес</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="symbols.html">Символи</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="filmi.html">Филми</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="vestnici.html">Вестници</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="almanah.html">Юбилеен алманах</a></li>
+            </ul>
+          </li>
+            <!-- Меню с подменю -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button">
+            Покорени върхове
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="profesional.html">Професионална подготовка</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="math.html">Математика и ИТ</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="nauki.html">Обществени и природни науки</a></li><hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="bel.html">Литература</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="languages.html">Езици</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="fvs.html">Спорт</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="teachers.html">Почетни награди и отличия на учители</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="inovations.html">Иновативно училище</a></li>
+          <li class="nav-item"><a class="nav-link" href="proekti.html">Проекти</a></li>
+          <li class="nav-item"><a class="nav-link" href="kvalifikacii.html">Квалификации</a></li>
+           <li class="nav-item"><a class="nav-link" href="traditions.html">Традиции</a></li>
+            <li class="nav-item"><a class="nav-link" href="team.html">Училищен екип</a></li>
+            <li class="nav-item"><a class="nav-link" href="vr.html">Виртуална разходка</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <main  class="container-fluid mt-2">
+        <div class="container">
+        <h1 >МЕХАНОТО - УЧИЛИЩЕ С ТРАДИЦИИ</h1> 
+        <p>Вече един век ние вървим по стъпките
+на всички значими хора, които са поставили началото и са оставили незаличима следа след себе си. Нашата мисия днес е
+да съхраним духа на Механото!
+Това е пътят на ПГМЕЕ – заедно с традициите посрещаме и промените, защото
+така се увеличават възможностите за
+успех! Това е пътят към качественото образование!</p> </div>
+        <div class="row row-cols-1 row-cols-md-3  pics ">      
+            <div class="card shadow-lg" onclick="openPopup(1)" > 
+              <h4 class="card-title " >Тържествено посрещане на 8-ми клас</h4> 
+            </div> 
+            <div class="card shadow-lg" onclick="openPopup(2)" >
+                <h4 class="card-title" >Отбелязване на деня на народните будители</h4> 
+            </div> 
+            <div class="card shadow-lg" onclick="openPopup(3)" >
+                <h4 class="card-title" >Честване на деня на учителя 05.10.</h4> 
+            </div> 
+            <div class="card shadow-lg" onclick="openPopup(4)" >
+                <h4 class="card-title" >Изпращане на зрелостниците на ПГМЕЕ</h4> 
+            </div>  
+            <div class="card shadow-lg" onclick="openPopup(5)" >
+                <h4 class="card-title" >Декемврийски празници</h4>  
+            </div> 
+            <div class="card shadow-lg" onclick="openPopup(6)" >
+                <h4 class="card-title" >Седмицата на четенето</h4> 
+            </div>            
+            <div class="card shadow-lg" onclick="openPopup(8)" >
+                <h4 class="card-title" >Празнична седмица</h4> 
+            </div> 
+            <div class="card shadow-lg" onclick="openPopup(12)" >
+                <h4 class="card-title" >Зелена Странджа</h4> 
+            </div> 
+            <div class="card shadow-lg" onclick="openPopup(9)" >
+                <h4 class="card-title" >Ежегодни математически състезания по повод деня на числото ПИ - 14.03.</h4> 
+            </div> 
+            <div class="card shadow-lg" onclick="openPopup(10)" >
+                <h4 class="card-title" >9-ти май - Ден на ученическото самоуправление
+                    </h4> 
+            </div> 
+            <div class="card shadow-lg" onclick="openPopup(7)" >
+                <h4 class="card-title" > Ден на Розовата фланелка</h4> 
+            </div> 
+            <div class="card shadow-lg" onclick="openPopup(11)" >
+                <h4 class="card-title" >Шествие по повод 24-ти май</h4> 
+            </div>   
+            <div class="card shadow-lg" onclick="openPopup(13)" >
+                <h4 class="card-title" >Концерт 90 години ПГМЕЕ</h4> 
+            </div> 
+            <div class="card shadow-lg" onclick="openPopup(14)" >
+                <h4 class="card-title" >Концерти на 12-тите класове</h4> 
+            </div> 
+            <div class="card shadow-lg" onclick="openPopup(15)" >
+                <h4 class="card-title" >Почит към историята и героите на България</h4> 
+            </div> 
+            <div class="card shadow-lg" onclick="openPopup(16)" >
+                <h4 class="card-title" >Състезания</h4> 
+            </div> 
+          </div>  
+          
+          <h1 ><a href="dareniq.html">ГОЛЯМОТО СЪРЦЕ НА МЕХАНОТО </a> </h1> 
+    </main>
+      
+    <div id="popupContainer1" class="popup">
+        <h4 class="popup-title">Тържествено посрещане на 8-мите класове</h4> 
+        <div class="image-container" id="imageContainer1"></div>
+        <div class="close" onclick="closePopup(1)">X</div>
+    </div>
+   
+    <div id="popupContainer2" class="popup">
+        <h4 class="popup-title">Отбелязване на деня на народните будители</h4> 
+        <div class="image-container" id="imageContainer2"></div>
+        <div class="close" onclick="closePopup(2)">X</div>
+    </div> 
+    <div id="popupContainer3" class="popup">
+        <h4 class="popup-title">Честване на деня на учителя 05.10.</h4> 
+        <div class="image-container" id="imageContainer3"></div>
+        <div class="close" onclick="closePopup(3)">X</div>
+    </div>
+    <div id="popupContainer4" class="popup">
+        <h4 class="popup-title">Изпращане на зрелостниците на ПГМЕЕ</h4> 
+        <div class="image-container" id="imageContainer4"></div>
+        <div class="close" onclick="closePopup(4)">X</div>
+    </div>
+    <div id="popupContainer5" class="popup">
+        <h4 class="popup-title">Декемврийски празници</h4> 
+        <div class="image-container" id="imageContainer5"></div>
+        <div class="close" onclick="closePopup(5)">X</div>
+    </div>
+    <div id="popupContainer6" class="popup">
+        <h4 class="popup-title">Седмицата на четенето</h4> 
+        <div class="image-container" id="imageContainer6"></div>
+        <div class="close" onclick="closePopup(6)">X</div>
+    </div>
+    <div id="popupContainer7" class="popup">
+        <h4 class="popup-title">Ден на Розовата фланелка</h4> 
+        <div class="image-container" id="imageContainer7"></div>
+        <div class="close" onclick="closePopup(7)">X</div>
+    </div>
+    <div id="popupContainer8" class="popup">
+        <h4 class="popup-title">Празнична седмица </h4> 
+        <div class="image-container" id="imageContainer8"></div>
+        <div class="close" onclick="closePopup(8)">X</div>
+    </div>
+    <div id="popupContainer9" class="popup">
+        <h4 class="popup-title">Ежегодни математически състезания по повод деня на числото ПИ - 14.03.</h4> 
+        <div class="image-container" id="imageContainer9"></div>
+        <div class="close" onclick="closePopup(9)">X</div>
+    </div>
+    <div id="popupContainer10" class="popup">
+        <h4 class="popup-title">9-ти май - Ден на ученическото самоуправление</h4> 
+        <div class="image-container" id="imageContainer10"></div>
+        <div class="close" onclick="closePopup(10)">X</div>
+    </div>
+    <div id="popupContainer11" class="popup">
+        <h4 class="popup-title">Шествие по повод 24-ти май</h4> 
+        <div class="image-container" id="imageContainer11"></div>
+        <div class="close" onclick="closePopup(11)">X</div>
+    </div>
+    <div id="popupContainer12" class="popup">
+        <h4 class="popup-title">Зелена Странджа</h4> 
+        <div class="image-container" id="imageContainer12"></div>
+        <div class="close" onclick="closePopup(12)">X</div>
+    </div>
+    <div id="popupContainer13" class="popup">
+        <h4 class="popup-title">Концерт 90 години ПГМЕЕ</h4> 
+        <div class="image-container" id="imageContainer13"></div>
+        <div class="close" onclick="closePopup(13)">X</div>
+    </div>
+    <div id="popupContainer14" class="popup">
+        <h4 class="popup-title">Концерти на 12-тите класове</h4> 
+        <div class="image-container" id="imageContainer14"></div>
+        <div class="close" onclick="closePopup(14)">X</div>
+    </div>
+    <div id="popupContainer15" class="popup">
+        <h4 class="popup-title">Почит към историята и героите на България</h4> 
+        <div class="image-container" id="imageContainer15"></div>
+        <div class="close" onclick="closePopup(15)">X</div>
+    </div>
+    <div id="popupContainer16" class="popup">
+        <h4 class="popup-title">Състезания</h4> 
+        <div class="image-container" id="imageContainer16"></div>
+        <div class="close" onclick="closePopup(16)">X</div>
+    </div>
+    
+</div>
+<footer></footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    // Обект с масиви от изображения за всяко pop-up прозорче
+    const popupImages = {
+        1: ['traditions/160.jpg','traditions/151.jpg', 'traditions/152.jpg', 'traditions/153.jpg', 'traditions/154.JPG', 'traditions/155.jpg', 'traditions/156.JPG','traditions/157.JPG', 'traditions/158.JPG','traditions/159.JPG','traditions/161.jpg','traditions/162.jpg','traditions/163.jpg'],
+        2: ['traditions/20.jpg', 'traditions/21.jpg', 'traditions/22.jpg','traditions/23.jpg','traditions/24.jpg','traditions/25.jpg','traditions/26.jpg','traditions/27.jpg','traditions/28.jpg','traditions/29.jpg','traditions/29_1.jpg'],
+        3: ['traditions/30.jpg', 'traditions/31.jpg', 'traditions/32.jpg','traditions/33.jpg','traditions/34.jpg', 'traditions/35.jpg','traditions/36.jpg','traditions/37.jpg','traditions/38.jpg','traditions/39.jpg','traditions/39_1.jpg','traditions/39_2.jpg'],
+        4: ['traditions/40.JPG', 'traditions/41.jpg', 'traditions/42.jpg','traditions/43.JPG','traditions/44.JPG', 'traditions/45.JPG','traditions/46.JPG','traditions/47.jpg'],
+        5: ['traditions/50_1.JPG','traditions/50.JPG', 'traditions/51.jpg', 'traditions/51_1.jpg','traditions/51_2.jpg','traditions/51_3.jpg', 'traditions/51_4.jpg','traditions/52.jpg','traditions/52_1.jpg','traditions/52_2.jpg','traditions/52_3.JPG','traditions/52_4.JPG','traditions/52_5.jpg','traditions/53.JPG','traditions/53_1.JPG','traditions/53_2.jpg','traditions/54.jpg','traditions/54_1.jpg','traditions/54_2.jpg','traditions/55.jpg','traditions/56.jpg','traditions/57.jpg','traditions/58.jpg','traditions/59.jpg'],
+        6: ['traditions/60.jpg', 'traditions/61.jpg', 'traditions/61_1.jpg','traditions/62.jpg','traditions/63.jpg', 'traditions/64.jpg','traditions/65.jpg','traditions/66.jpg','traditions/67.jpg','traditions/69.jpg'],
+        7: ['traditions/71.jpg', 'traditions/72.jpg', 'traditions/73.jpg','traditions/74.jpg'],
+        8: ['traditions/81.jpg', 'traditions/82.jpg', 'traditions/83.jpg','traditions/84.jpg'],
+        9: ['traditions/pi.jpg', 'traditions/pi1.jpg', 'traditions/pi2.jpg','traditions/pi3.jpg','traditions/pi4.jpg','traditions/pi5.jpg','traditions/pi6.jpg','traditions/pi7.jpg','traditions/pi8.jpg','traditions/pi9.jpg','traditions/pi10.jpg','traditions/pi11.jpg'],
+        10: ['traditions/10.png','traditions/10_1.jpg', 'traditions/10_2.jpg', 'traditions/10_3.jpg','traditions/10_4.jpg'],
+        11: ['traditions/111.JPG','traditions/112.jpg', 'traditions/113.jpg', 'traditions/114.jpg','traditions/115.jpg','traditions/116.JPG','traditions/117.jpg','traditions/118.jpg','traditions/119.jpg','traditions/110.JPG'],
+        12: ['traditions/12.jpg','traditions/12_1.jpg', 'traditions/12_2.jpg', 'traditions/12_3.jpg','traditions/12_4.jpg','traditions/12_5.jpg'],
+        13: ['traditions/90.JPG','traditions/91.JPG', 'traditions/92.JPG', 'traditions/93.JPG','traditions/94.JPG','traditions/95.JPG','traditions/96.JPG','traditions/97.JPG','traditions/98.JPG','traditions/99.JPG','traditions/99_1.JPG','traditions/99_2.JPG','traditions/99_3.JPG'],
+        14: ['traditions/140.JPG','traditions/141.JPG', 'traditions/142.JPG', 'traditions/143.JPG','traditions/144.JPG'],
+        15: ['traditions/15.jpg','traditions/15_1.jpg', 'traditions/15_2.jpg', 'traditions/15_3.jpg','traditions/15_4.jpg','traditions/15_5.jpg','traditions/15_6.jpg'],
+        16: ['traditions/1160.JPG','traditions/1161.JPG', 'traditions/1162.JPG', 'traditions/1163.JPG','traditions/1164.JPG','traditions/1165.JPG','traditions/1166.JPG','traditions/1167.JPG','traditions/1168.JPG','traditions/1169.jpg', 'traditions/1170.JPG','traditions/1171.jpeg','traditions/1172.jpg','traditions/1173.jpg','traditions/1174.jpeg','traditions/1175.JPG','traditions/1176.JPG','traditions/1177.JPG','traditions/1178.JPG','traditions/1179.JPG']
+    };
+
+    let activeSlideshows = {}; // Обект за активни слайдшоута
+
+    function startSlideshow(index) {
+        if (activeSlideshows[index]) return; // Ако вече върви, не го стартирай отново
+
+        const imageContainer = document.getElementById(`imageContainer${index}`);
+        const images = popupImages[index];
+
+        if (!images || images.length === 0) return; // Ако няма снимки, не прави нищо
+
+        let currentIndex = 0;
+
+        function showNextImage() {
+            imageContainer.innerHTML = ''; // Изчистваме предишното изображение
+
+            const img = document.createElement('img');
+            img.src = images[currentIndex];
+            img.style.opacity = '0';
+            img.style.transition = 'opacity 1s';
+            imageContainer.appendChild(img);
+
+            setTimeout(() => {
+                img.style.opacity = '1';
+            }, 100);
+
+            currentIndex = (currentIndex + 1) % images.length;
+            activeSlideshows[index] = setTimeout(showNextImage, 3000);
+        }
+
+        showNextImage();
+    }
+
+    function stopSlideshow(index) {
+        if (activeSlideshows[index]) {
+            clearTimeout(activeSlideshows[index]);
+            delete activeSlideshows[index];
+        }
+    }
+
+    window.openPopup = function (index) {
+        document.getElementById(`popupContainer${index}`).style.display = 'block';
+        startSlideshow(index);
+    };
+
+    window.closePopup = function (index) {
+        document.getElementById(`popupContainer${index}`).style.display = 'none';
+        stopSlideshow(index);
+    };
+});
+
+  </script>  
+ 
+</body>
+</html>
