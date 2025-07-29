@@ -18,16 +18,21 @@
     <link rel="stylesheet" href="buttons.css">
     <link rel="stylesheet" href="sport.css">
     <style>
-  body{
+  main{
     background-image: url('images/bmbg.avif');
     background-color:#C1C1C1; 
     color: #172029;
+    background-position:top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
  }
   .carousel-control-prev,
 .carousel-control-next {
   position: absolute;
-  top: 90%;
-  transform: translateY(-90%);
+  top: 80%;
+  transform: translateY(-80%);
   background: rgba(0, 0, 0, 0.5); /* Optional: Change background color */
   width: 2vw; /* Optional: Adjust arrow container width */
   height: 5vh; /* Optional: Adjust arrow container height */
@@ -113,8 +118,9 @@
       </div>
     </div>
   </nav>
+  <main class="container-fluid "  >
         <h1 style="color: #172029;" >БАДМИНТОН</h1> 
-<section  class="container-fluid main"  >
+<section  class="container-fluid "  >
         <div id="carouselExampleCaptions"  class="carousel carousel-dark slide " data-bs-ride="carousel">
             <div class="carousel-indicators" >
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -264,8 +270,8 @@
                 <span class="visually-hidden">Next</span>
             </button>
 
-
 </section>
+</main>
 <a href="fvs.html" class="previous" ><img src="images/left.png" ></a>
 <footer></footer>
 </body>

@@ -1,23 +1,4 @@
-body{
-    background-image: url('images/sport10.jpg');
-    background-color:#C1C1C1;
-   /* background-color: #F7F8F6;*/
-    background-position:top;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-size: 1.3vw;
-    text-align: justify;
-    font-family: "Philosopher", sans-serif;
-    font-weight: 700;
-    font-style: normal;   
-    color: #172029;
- }
- .main{
-    background-color:transparent;
-    width: 100vw;
-    margin: 1vh auto 3vh  ;
-}
+
 .d-block {
     width: 47vw;
     margin: 0px auto 3vh;
@@ -63,8 +44,8 @@ margin: 2vh auto;
 .carousel-control-prev,
 .carousel-control-next {
 position: absolute;
-top: 50%;
-transform: translateY(-50%);
+top: 40%;
+transform: translateY(-40%);
 /*background: rgba(0, 0, 0, 0.5);  Optional: Change background color */
 width: 2vw; /* Optional: Adjust arrow container width */
 height: 5vh; /* Optional: Adjust arrow container height */

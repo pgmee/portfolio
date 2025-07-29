@@ -1,14 +1,13 @@
-body{
-  background-image: url('images/sport10.jpg');
+
+main{
+  background-color:transparent;
+  padding-bottom: 2vh;
+    background-image: url('images/sport10.jpg');
   background-position:top;
   background-attachment: fixed;
   background-repeat: repeat-y;
   background-size: cover;
    background-color:#F5F5F1;
-}
-main{
-  background-color:transparent;
-  padding-bottom: 2vh;
 }
 #voleyball{
   display: none;
