@@ -28,18 +28,18 @@ transition: transform 1.5s ease, opacity .5s ease-out;
 margin-bottom: 2vh;
 }
 h1{
-    font-size: 6vh;
     text-align: center;
     font-weight: 900;
 }
 h2{
-font-size: 2.5vw;
+font-size: 1.7rem;
 font-weight: 900;
 text-align: center;
 }
 h4{
-font-size: 1.8vw;
+font-size: 1.3rem;
 margin: 2vh auto;
+text-align: justify;
 }
 .carousel-control-prev,
 .carousel-control-next {
@@ -66,7 +66,7 @@ position: fixed;
     right:3vw; 
 }
 a.previous img, a.next img {
-width: 120%; /* Увеличаване на ширината за по-добра видимост */
+width: 100%; /* Увеличаване на ширината за по-добра видимост */
 max-width: 20vw; /* Може да коригирате стойността според нуждите */}
 
 @media (max-width: 768px) {
@@ -87,20 +87,15 @@ right: 1vw; /* Move the next arrow 20 pixels to the left */
 }
 a.previous img {
 position: fixed;
-    bottom:15vh;
+    bottom:5vh;
     right:7vw; 
     width:12vw;
     height: 7vh;     
 }
-h1{
-    font-size: 3vh;
-}
-h2{
-    font-size: 3vw;
-}
+
 h4{
     font-size: 2.3vw;
-    margin: 2vh auto;
+    margin: 1vh auto;
 }
 
 }
@@ -122,17 +117,12 @@ right: 1vw; /* Move the next arrow 20 pixels to the left */
 }
 a.previous img {
       position: fixed;
-          bottom:3vh;
+          bottom:13vh;
           right:3vw; 
           width:12vw;
           height: 7vh;
       }
-      h1{
-        font-size: 3.5vh;
-    }
-h2{
-    font-size: 3.5vw;
-}
+     
 h4{
     font-size: 2.5vw;
     margin: 1vh auto;
