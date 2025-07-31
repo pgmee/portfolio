@@ -44,7 +44,7 @@ main{
 
   h4{
     margin:1vh auto;
-    font-size: 1.5vw;
+    font-size: 1.2rem;
     font-weight: 700;
   }
   .pics{
@@ -70,6 +70,12 @@ main{
    #tenis img{
     width:100%;
  }
+   #voleyball h1,
+   #atletika h1,
+   #tenis h1{
+font-size: 1.4rem;
+padding-top: 1vh;
+   }
  a{
   text-decoration: none;
   text-align: center;
@@ -130,13 +136,10 @@ main{
   flex-wrap: wrap;
 }
     @media (max-width: 768px) {
-      section #atletika a.previous img, section #atletika a.next img {
-        width: 120%; /* Увеличаване на ширината за по-добра видимост */
-        max-width: 20vw; /* Може да коригирате стойността според нуждите */}
-     
-      h1{
-        font-size: 1.3rem;
-      }
+    /*  section #atletika a.previous img, section #atletika a.next img {
+        width: 120%; 
+        max-width: 20vw; }*/
+      
       h4{
         font-size: 1.2rem;
       }
