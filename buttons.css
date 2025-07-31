@@ -34,14 +34,16 @@ a.previousbut img, a.nextbut img {
   width: 90%;
   max-width: 20vw;  }
   @media (max-width: 768px){
-  a.previous img {
+  a.previous img,
+  a.previousbut img {
     position: fixed;
         bottom:5vh;
         right:7vw; 
         width:9vw;
         height: 6vh;
     } 
-    a.next img {
+    a.next img,
+    a.nextbut img  {
     position: fixed;
         bottom:12vh;
         right: 1vw; 
@@ -51,14 +53,16 @@ a.previousbut img, a.nextbut img {
 }
 
 @media (max-width: 480px) {
-      a.previous img {
+      a.previous img,
+      a.previousbut img {
           position: fixed;
               bottom:5vh;
               right:8vw; 
               width:9vw;
               height: 6vh;
           }
-          a.next img {
+          a.next img,
+          a.nextbut img  {
           position: fixed;
               bottom:12vh;
               right: 3vw; 
