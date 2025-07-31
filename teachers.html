@@ -60,6 +60,50 @@
         .rg{
   width: 30%;
 }
+ @media (max-width: 768px){
+  a.previous img {
+    position: fixed;
+        bottom:5vh;
+        right:7vw; 
+        width:9vw;
+        height: 6vh;
+    } 
+    a.next img {
+    position: fixed;
+        bottom:12vh;
+        right: 1vw; 
+        width: 6vw;
+        height: 6vh;
+  }
+  .big{
+    flex-direction: column;
+    align-items: center;
+  }
+  .col{
+    width: 80%;
+    margin: auto;
+  }
+  .card-img-top{
+          width: 80%;
+          height: auto;
+        }
+ }
+  @media (max-width: 480px) {
+     a.previous img {
+          position: fixed;
+              bottom:5vh;
+              right:5vw; 
+              width:9vw;
+              height: 6vh;
+          }
+          a.next img {
+          position: fixed;
+              bottom:12vh;
+              right: 1vw; 
+              width: 7vw;
+              height: 6vh;
+          }
+  }
     </style>
 </head>
 <body>
