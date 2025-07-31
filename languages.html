@@ -152,17 +152,34 @@ h4{
         height: 6vh;
   }
   .card{
-width: 50%;
+width: 60%;
 margin: 5vh 5vw;
 }
 #ae .card, #ne .card {
         width: 65%;
+  height: auto !important;
+    background-size: cover;
+    padding: 0; /* ако има нужда */
+    position: relative; /* важно, за да работи с overlay */  
+  display: flex;
+  flex-direction: column;
     }
 
 #ae .card-img-overlay, #ne .card-img-overlay{
-  width: 95%;
-  margin: 3vh auto;
+  
+  position: relative !important; /* махаме absolute */
+    width: 100%;
+    margin: 0 auto;
+    padding: 4vh 5vw; 
 }
+.card-img-overlay img {
+    max-width: 100%;
+    height: auto;
+    max-height: 40vh;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 1rem;
+  }
 #ae h1,
 #ne h1{
     font-size: 5vw;
