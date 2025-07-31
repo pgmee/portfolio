@@ -135,7 +135,7 @@ main{
         max-width: 20vw; /* Може да коригирате стойността според нуждите */}
      
       h1{
-        font-size: 1.7rem;
+        font-size: 1.3rem;
       }
       h4{
         font-size: 1.2rem;
@@ -165,9 +165,6 @@ main{
         .card{
           width: 70%;
         }
-        h1{
-          font-size: 7vw;
-          margin-bottom: 0px;
-        }
+      
       
   }
