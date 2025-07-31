@@ -125,23 +125,7 @@ main{
     right: 0; /* Поставете десния край на линията в края на контейнера */
     transform: translateX(50%); /* Центрирайте линията хоризонтално */
   }
-  a.previous img, a.next img {
-    width: 100%; /* Увеличаване на ширината за по-добра видимост */
-    max-width: 20vw; /* Може да коригирате стойността според нуждите */}  
-  .previous {
-    position: fixed;
-        bottom:6vh;
-        right:1vw; 
-        width:5vw;
-        height: 4vh;
-    }
-    .next {  
-    position: fixed;
-        bottom:10vh;
-        right: 1.5vw; 
-        width: 5vw;
-        height: 4vh;
-    }
+  
 .row{
   flex-wrap: wrap;
 }
