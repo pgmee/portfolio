@@ -103,8 +103,8 @@ h4{
 .carousel-control-prev,
 .carousel-control-next {
 position: absolute;
-top: 90%;
-transform: translateY(-90%);
+top: 70%;
+transform: translateY(-70%);
 background: rgba(0, 0, 0, 0.5); /* Optional: Change background color */
 width: 2vw; /* Optional: Adjust arrow container width */
 height: 5vh; /* Optional: Adjust arrow container height */
