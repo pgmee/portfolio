@@ -12,6 +12,10 @@ border: none;
 background-color: transparent;
 margin: 1vh auto;
 }
+main>h2{
+  font-size: 1.9rem;
+  font-weight: 900;
+}
 h4{
 text-align: center;
 font-size: 1.5rem;
