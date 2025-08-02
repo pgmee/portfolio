@@ -32,6 +32,7 @@ transform: scale(1.1)
 .card-title{
 padding: 1vh 2vw 0px;
 background-color: transparent;
+font-size: 1.7rem;
 }
 .popup {
     display: none;
@@ -99,7 +100,7 @@ width: 77%;
   main>h2{
         font-size:1.7rem;
   }
-h4{
+.card-title{
 font-size: 1.3rem;
 }
 
